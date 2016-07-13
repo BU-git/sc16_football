@@ -1,0 +1,12 @@
+<template name="mainLayout">
+    <header>Header</header>
+    <main>
+        {{#momentum plugin="fade"}}
+          {{#if Template.subscriptionsReady}}
+            {{> Template.dynamic template=main}}
+          {{else}}
+            {{> spinner}}}}
+          {{/if}}
+        {{/momentum}}
+    </main>
+</template>
