@@ -19,6 +19,5 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 sacha:spin
 percolate:momentum
-fourseven:scss
 kadira:flow-router
 kadira:blaze-layout
