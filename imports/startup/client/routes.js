@@ -10,13 +10,6 @@ import '../../ui/pages/about-page.js';
 import '../../ui/pages/contact-page.js';
 import '../../ui/pages/team-page.js';
 
-FlowRouter.route('/', {
-  name: 'homePage',
-  action() {
-    BlazeLayout.render('mainLayout', { main: 'homePage', header: 'header', footer: 'footer' });
-  },
-});
-
 FlowRouter.route('/about', {
   name: 'aboutPage',
   action() {
@@ -24,7 +17,7 @@ FlowRouter.route('/about', {
   },
 });
 
-FlowRouter.route('/main', {
+FlowRouter.route('/', {
   name: 'homePage',
   action() {
     BlazeLayout.render('mainLayout', { main: 'homePage', header: 'header', footer: 'footer' });
