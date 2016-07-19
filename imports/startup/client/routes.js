@@ -17,6 +17,20 @@ FlowRouter.route('/', {
   },
 });
 
+FlowRouter.route('/about', {
+  name: 'aboutPage',
+  action() {
+    BlazeLayout.render('mainLayout', { main: 'aboutPage', header: 'header', footer: 'footer' });
+  },
+});
+
+FlowRouter.route('/main', {
+  name: 'homePage',
+  action() {
+    BlazeLayout.render('mainLayout', { main: 'homePage', header: 'header', footer: 'footer' });
+  },
+});
+
 FlowRouter.notFound = {
   action() {
     BlazeLayout.render('mainLayout', { main: 'notFound' });
