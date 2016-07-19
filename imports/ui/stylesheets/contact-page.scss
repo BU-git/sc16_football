@@ -1,11 +1,17 @@
-.main__tel a{
-	text-decoration: none;
-	font-size: 20px; 
-}
-.main__adress{
-	font-size: 16px;
-}
-.main__map{
+.map-container {
 	width: 100%;
-	display: block;
+	height: 320px;
+}
+.contact{
+	&__tel a{
+		text-decoration: none;
+		font-size: 20px; 
+	}
+	&__adress{
+		font-size: 16px;
+	}
+	&__map{
+		width: 100%;
+		display: block;
+	}
 }
