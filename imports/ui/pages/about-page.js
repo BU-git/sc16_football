@@ -1,1 +1,1 @@
-import './contact-page.html';
+import './about-page.html';
