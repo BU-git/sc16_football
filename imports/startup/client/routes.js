@@ -17,6 +17,13 @@ FlowRouter.route('/', {
   },
 });
 
+FlowRouter.route('/contact', {
+  name: 'contactPage',
+  action() {
+    BlazeLayout.render('mainLayout', { main: 'contactPage', header: 'header', footer: 'footer' });
+  },
+});
+
 FlowRouter.notFound = {
   action() {
     BlazeLayout.render('mainLayout', { main: 'notFound' });
