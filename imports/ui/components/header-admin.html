@@ -16,7 +16,9 @@
                     <li><a href="/">Перейти на сайт</a></li>
                 </ul>
                 {{#if isInRole 'admin'}}
-                    <button type="button" class="btn btn-default navbar-btn" id="logout">Выйти</button>
+                    <div class="navbar-right">
+                        <button type="button" class="btn btn-default navbar-btn" id="logout">Выйти</button>
+                    </div>
                 {{/if}}
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
