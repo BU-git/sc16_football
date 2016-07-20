@@ -1,0 +1,11 @@
+.swiper-slide{
+    height: 100vh;
+    background: #fff no-repeat 50% 50%;
+    background-size: cover;
+    @include tablet{
+        height: 500px;
+    }
+    @include mobile{
+        height: 300px;
+    }
+}

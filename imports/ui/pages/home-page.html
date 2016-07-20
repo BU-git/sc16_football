@@ -1,32 +1,58 @@
 <template name="homePage">
-	<div class="container">
-		<h2 class="text-center">Добро пожаловать</h2>
-		<div>
-			<p>Рады приветствовать Вас на сайте детской футбольной школы для детей.</p>
-    		<p>Украинская футбольная школа UFS направлена на обучение футболу детей от 4 до 8 лет. Наши тренера настоящие профессионалы, которые всегда найдут особый подход к каждому молодому футболисту. Тренировочный процесс специально разработан и адаптирован для детей этого возраста.</p>
-   			<p>Основными принципами тренировок являются: физическое развитие детей, формирование основных технических навыков, дисциплина, работа в команде, зарождение и развитие футбольного мышления.</p>
-     		<p>Чтобы увидеть процесс тренировки приходите к нам на ознакомительное занятие!</p>
-		</div>
-		<h2 class="text-center">Отзывы</h2>
-		<div class="row">
-			<div class="col-md-6 row">
-				<div class="col-md-5">
-					<img src="/reviewers/review1.jpg" alt="reviewer1" class="img-responsive img-circle center-block">
-				</div>		
-				<h2 class="text-left">Елена Баранова</h2>		
-				<div class="col-md-7">
-					Мне очень понравилось то внимание и тот профессионализм с каким Ваши тренеры занимаются с мальчишками! Я уверена что при таком подходе к ним у нас будут не только хорошие спортсмены но и настоящие мужчины расти! Большое ВАМ спасибо!
-				</div>
-			</div>
-			<div class="col-md-6 row">
-				<div class="col-md-5">
-					<img src="/reviewers/review2.jpg" alt="reviewer2" class="img-responsive img-circle center-block">
-				</div>			
-				<h2 class="text-left">Илья Янин</h2>	
-				<div class="col-md-7">
-					Ребята молодцы) добивайтесь положительных результатов, продвигайтесь по карьерной лестнице! успехов, удачи и везенья!!!
-				</div>
-			</div>
-		</div>
-	</div>
+    <!-- slider -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('/slider/slider-1.JPG')"> 
+                <div class="swiper-content"></div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('/slider/slider-2.JPG')">
+                <div class="swiper-content"></div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('/slider/slider-3.JPG')"> 
+                <div class="swiper-content"></div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('/slider/slider-4.JPG')"> 
+                <div class="swiper-content"></div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('/slider/slider-5.JPG')"> 
+                <div class="swiper-content"></div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+    <!-- end slider -->
+    <div class="container">
+        <h2 class="text-center">Добро пожаловать</h2>
+        <div>
+            <p>Рады приветствовать Вас на сайте детской футбольной школы для детей.</p>
+            <p>Украинская футбольная школа UFS направлена на обучение футболу детей от 4 до 8 лет. Наши тренера настоящие профессионалы, которые всегда найдут особый подход к каждому молодому футболисту. Тренировочный процесс специально разработан и адаптирован для детей этого возраста.</p>
+            <p>Основными принципами тренировок являются: физическое развитие детей, формирование основных технических навыков, дисциплина, работа в команде, зарождение и развитие футбольного мышления.</p>
+            <p>Чтобы увидеть процесс тренировки приходите к нам на ознакомительное занятие!</p>
+        </div>
+        <h2 class="text-center">Отзывы</h2>
+        <div class="row">
+            <div class="col-md-6 row">
+                <div class="col-md-5">
+                    <img src="/reviewers/review1.jpg" alt="reviewer1" class="img-responsive img-circle center-block">
+                </div>      
+                <h2 class="text-left">Елена Баранова</h2>       
+                <div class="col-md-7">
+                    Мне очень понравилось то внимание и тот профессионализм с каким Ваши тренеры занимаются с мальчишками! Я уверена что при таком подходе к ним у нас будут не только хорошие спортсмены но и настоящие мужчины расти! Большое ВАМ спасибо!
+                </div>
+            </div>
+            <div class="col-md-6 row">
+                <div class="col-md-5">
+                    <img src="/reviewers/review2.jpg" alt="reviewer2" class="img-responsive img-circle center-block">
+                </div>          
+                <h2 class="text-left">Илья Янин</h2>    
+                <div class="col-md-7">
+                    Ребята молодцы) добивайтесь положительных результатов, продвигайтесь по карьерной лестнице! успехов, удачи и везенья!!!
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
