@@ -1,0 +1,16 @@
+.card{	
+
+	&__img {
+		margin: 20px auto;
+		height: 300px;
+		width: 100%;
+		background: #fff no-repeat 50% 50%;
+		background-size: cover;
+		@include tablet{
+			height: 200px;
+		}
+		@include mobile{
+			height: 200px;
+		}
+	}
+}

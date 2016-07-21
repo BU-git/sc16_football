@@ -14,6 +14,7 @@ import '../../ui/pages/contact-page.js';
 import '../../ui/pages/team-page.js';
 import '../../ui/pages/admin-page.js';
 import '../../ui/pages/login-page.js';
+import '../../ui/pages/gallery-page.js';
 
 import adminUser from '../../modules/admin-user';
 
@@ -35,6 +36,13 @@ FlowRouter.route('/contact', {
   name: 'contactPage',
   action() {
     BlazeLayout.render('mainLayout', { main: 'contactPage', header: 'header', footer: 'footer' });
+  },
+});
+
+FlowRouter.route('/gallery', {
+  name: 'galleryPage',
+  action() {
+    BlazeLayout.render('mainLayout', { main: 'galleryPage', header: 'header', footer: 'footer' });
   },
 });
 
