@@ -1,0 +1,12 @@
+.member{
+    text-align: center;
+    font-size: 18px;
+    &__photo{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        border-radius: 50%;
+        background: #cccccc no-repeat 50% 50%;
+        background-size: cover;
+    }
+}
