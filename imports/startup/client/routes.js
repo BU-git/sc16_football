@@ -53,6 +53,13 @@ FlowRouter.route('/team', {
   },
 });
 
+FlowRouter.route('/gallery', {
+  name: 'galleryPage',
+  action() {
+    BlazeLayout.render('mainLayout', { main: 'galleryPage', header: 'header', footer: 'footer' });
+  },
+});
+
 FlowRouter.notFound = {
   action() {
     BlazeLayout.render('mainLayout', { main: 'notFound' });
