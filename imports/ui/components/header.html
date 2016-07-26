@@ -1,22 +1,24 @@
 <template name="header">
     <div class="header">
         <div class="container">
-            <div class="col-md-4 hidden-xs">
-                <div class="header__contact">
-                    <p>г. Киев<br>
-                        бульвар Игоря Шамо 18\2 <br>
-                        Институт Искусств</p>
-                        <p>Тел. 067-46-889-46</p>
+            <div class="row">
+                <div class="col-md-4 hidden-xs">
+                    <div class="header__contact">
+                        <p>г. Киев<br>
+                            бульвар Игоря Шамо 18\2 <br>
+                            Институт Искусств</p>
+                            <p>Тел. 067-46-889-46</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <a class="logo" href="/">{{> logo}}</a>
-                </div>
-                <div class="header__social">
-                    <div class="col-md-4 hidden-xs">
-                        <div class="header__social social text-right">
-                            <a href="https://vk.com/ukrfs"><img src="/icons/vk.png" alt="vk"></a>
-                            <a href="https://www.facebook.com/ukrainianfs?ref=profile"><img src="/icons/facebook.png" alt="facebook"></a>
+                    <div class="col-md-4">
+                        <a class="logo" href="/">{{> logo}}</a>
+                    </div>
+                    <div class="header__social">
+                        <div class="col-md-4 hidden-xs">
+                            <div class="header__social social text-right">
+                                <a href="https://vk.com/ukrfs"><img src="/icons/vk.png" alt="vk"></a>
+                                <a href="https://www.facebook.com/ukrainianfs?ref=profile"><img src="/icons/facebook.png" alt="facebook"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -37,7 +39,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li class="{{isActivePath '/'}}"><a href="/">Главная</a></li>
-                        <li class="{{isActivePath '/about'}}"><a href="/about">О Нас</a></li>
+                        <li class="{{isActivePath '/about'}} text-nowrap"><a href="/about">О Нас</a></li>
                         <li class="{{isActivePath '/team'}}"><a href="/team">Команда</a></li>
                         <li class="{{isActivePath '/gallery'}}"><a href="/gallery">Галерея</a></li>
                         <li class="{{isActivePath '/contact'}}"><a href="/contact">Контакты</a></li>
