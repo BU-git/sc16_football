@@ -1,4 +1,13 @@
 import { Meteor } from 'meteor/meteor';
-import { Events } from '../events';
+import { News } from '../news';
+import { Images } from '../images';
 
-Meteor.publish('events', () => Events.find());
+// Meteor.publish('news', () => News.find());
+
+Meteor.publish('news', function () {
+    return News.find();
+});
+
+Meteor.publish('files.images.all', function () {
+    return Images.find().cursor;
+});

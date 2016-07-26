@@ -6,7 +6,10 @@ import '../../ui/layouts/admin-layout.js';
 
 import '../../ui/components/header.js';
 import '../../ui/components/header-admin.js';
+import '../../ui/components/sidebar-admin.js';
 import '../../ui/components/footer.js';
+
+import '../../ui/pages/admin-news-page.js';
 
 import '../../ui/pages/home-page.js';
 import '../../ui/pages/about-page.js';
@@ -66,6 +69,12 @@ FlowRouter.notFound = {
   },
 };
 
+
+
+// /////////
+// admin///
+// ///////
+
 FlowRouter.route('/admin', {
   name: 'adminPage',
   action() {
@@ -74,9 +83,16 @@ FlowRouter.route('/admin', {
         if(!adminUser(Meteor.userId())) {
           BlazeLayout.render('adminLayout', { main: 'loginPage' });
         } else {
-          BlazeLayout.render('adminLayout', { main: 'adminPage' });
+          BlazeLayout.render('adminLayout', { main: 'adminPage', sidebar: 'sidebarAdmin' });
         }
       }
     });
   }
+});
+
+FlowRouter.route('/admin/news', {
+  name: 'adminNewsPage',
+  action() {
+    BlazeLayout.render('adminLayout', { main: 'adminNewsPage', sidebar: 'sidebarAdmin' });
+  },
 });

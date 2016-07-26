@@ -1,7 +1,12 @@
 <template name="adminLayout">
     {{> headerAdmin}}
-    <main>
-      {{> Template.dynamic template=main}}
-    </main>
+    <div class="">
+        <aside class="col-md-3">
+            {{> Template.dynamic template=sidebar}}
+        </aside>
+        <section class="col-md-8">
+            {{> Template.dynamic template=main}}
+        </section>
+    </div>
     {{> Template.dynamic template=footer}}
 </template>

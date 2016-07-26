@@ -1,0 +1,45 @@
+<template name="adminNewsPage">
+    {{#if Template.subscriptionsReady}}
+    <div class="h3">Добавить новую новость</div>
+    <form class="form" id="js-add-news">
+        <!-- title -->
+        <div class="form-group">
+            <label for="js-news-title">Заголовок</label>
+            <input type="text" class="form-control" id="js-news-title" placeholder="Введите название новости" required>
+        </div>
+        <!-- description -->
+        <div class="form-group">
+            <label for="js-news-desc">Краткое описание</label>
+            <textarea id="js-news-desc" class="form-control" rows="3" placeholder="Введите краткое описание новости" required></textarea>
+        </div>
+        <!-- upload img -->
+        {{#with currentUpload}}
+            Uploading <b>{{file.name}}</b>: 
+            <span id="progress">{{progress.get}}%</span>
+        {{else}}
+            <div class="form-group">
+                <label for="js-thumbnail-input">Миниатюра</label>
+                <input type="file" id="js-thumbnail-input">
+                {{#if thumbnailUrl}}
+                <div class="form__thumbnail" style='background-image: url({{thumbnailUrl}})'></div>
+                {{/if}}
+            </div>
+        {{/with}}
+        <!-- submit btn -->
+        <button type="submit" class="btn btn-default">Добавить новость</button>
+    </form>
+
+    <h3>Новости</h3>
+    {{#each news}}
+        <div class="news">
+            <div class="news__image" style='background-image: url({{this.thumbnail}})'></div>
+            <div class="news__info">
+                <p><strong>Заголовок:</strong> {{this.title}}</p>
+                <p><strong>Дата:</strong> {{this.date}}</p>
+                <p><strong>Описание:</strong> {{this.description}}</p>
+            </div>
+        </div>
+    {{/each}}
+
+    {{/if}}
+</template>

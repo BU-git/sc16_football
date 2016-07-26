@@ -1,0 +1,14 @@
+.news{
+    &__image{
+        display: inline-block;
+        width: 150px;
+        height: 150px;
+        background: #fff no-repeat 50% 50%;
+        background-size: cover;
+    }
+    &__info{
+        display: inline-block;
+        vertical-align: top;
+        margin-left: 15px;
+    }
+}

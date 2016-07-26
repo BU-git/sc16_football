@@ -16,6 +16,7 @@ caching-html-compiler@1.0.6
 callback-hook@1.0.9
 check@1.2.3
 coffeescript@1.1.4
+dbarrett:dropzonejs@4.2.1
 dburles:google-maps@1.1.5
 ddp@1.2.5
 ddp-client@1.2.9
@@ -46,6 +47,7 @@ localstorage@1.0.11
 logging@1.0.14
 meteor@1.1.16
 meteor-base@1.0.4
+meteortoys:toykit@3.0.4
 minifier-css@1.1.13
 minifier-js@1.1.13
 minimongo@1.0.17
@@ -56,11 +58,14 @@ modules-runtime@0.6.5
 mongo@1.1.9_1
 mongo-id@1.0.5
 mrt:fancybox@0.5.0
+msavin:mongol@2.0.1
 nolimits4web:swiper@3.3.1
 npm-bcrypt@0.8.6_3
 npm-mongo@1.4.45
 observe-sequence@1.0.12
 ordered-dict@1.0.8
+ostrio:cookies@2.0.4
+ostrio:files@1.6.5
 percolate:momentum@0.7.2
 percolate:velocityjs@1.1.0
 promise@0.7.3
@@ -73,6 +78,7 @@ retry@1.0.8
 routepolicy@1.0.11
 sacha:spin@2.3.1
 service-configuration@1.0.10
+session@1.1.6
 sha@1.0.8
 spacebars@1.0.12
 spacebars-compiler@1.0.12
