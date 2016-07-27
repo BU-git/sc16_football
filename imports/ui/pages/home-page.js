@@ -9,7 +9,6 @@ Template.homePage.onRendered(function() {
         loop: true,
         autoplay: 3000,
         speed: 500,
-        pagination: '.swiper-pagination',
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
         paginationClickable: true,
