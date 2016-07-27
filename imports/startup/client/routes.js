@@ -11,6 +11,7 @@ import '../../ui/components/footer.js';
 import '../../ui/components/enroll-modal.js';
 
 import '../../ui/pages/admin-news-page.js';
+import '../../ui/pages/admin-inbox-page.js';
 
 import '../../ui/pages/home-page.js';
 import '../../ui/pages/about-page.js';
@@ -88,5 +89,11 @@ FlowRouter.route('/admin/news', {
   name: 'adminNewsPage',
   action() {
     BlazeLayout.render('adminLayout', { main: 'adminNewsPage', sidebar: 'sidebarAdmin' });
+  },
+});
+FlowRouter.route('/admin/inbox', {
+  name: 'adminInboxPage',
+  action() {
+    BlazeLayout.render('adminLayout', { main: 'adminInboxPage', sidebar: 'sidebarAdmin' });
   },
 });

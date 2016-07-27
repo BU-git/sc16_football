@@ -1,13 +1,13 @@
 <template name="sidebarAdmin">
     <ul class="nav nav-pills nav-stacked">
         <li role="presentation" class="{{isActivePath '/admin'}}">
-            <a class="disabled" href="/admin">Главная</a>
+            <a href="/admin">Главная</a>
         </li>
-<!--         <li role="presentation" class="{{isActivePath '/admin/inbox'}}">
-            <a class="disabled" href="/admin/inbox">Заявки <span class="badge">42</span></a>
-        </li> -->
+        <li role="presentation" class="{{isActivePath '/admin/inbox'}}">
+            <a href="/admin/inbox">Заявки {{#if unreadCount}}<span class="badge">{{unreadCount}}</span>{{/if}}</a>
+        </li>
         <li role="presentation"  class="{{isActivePath '/admin/news'}}">
-            <a class="disabled" href="/admin/news">Новости</a>
+            <a href="/admin/news">Новости</a>
         </li>
 <!--         <li role="presentation" class="{{isActivePath '/admin/calendar'}}">
             <a class="disabled" href="/admin/calendar">Календарь</a>

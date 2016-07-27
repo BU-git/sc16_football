@@ -1,0 +1,6 @@
+<template name="adminInboxPage">
+    <h3>Заявки</h3>
+    {{#if Template.subscriptionsReady}}
+        {{> reactiveTable settings=enrollsTableSettings}}
+    {{/if}}
+</template>
