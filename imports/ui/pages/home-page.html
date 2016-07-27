@@ -1,6 +1,6 @@
 <template name="homePage">
     <!-- slider -->
-    <div class="swiper-container">
+    <div class="swiper-container slider slider--header">
         <div class="swiper-wrapper">
             <div class="swiper-slide" style="background-image: url('/slider/slider-1.JPG')"> 
                 <div class="swiper-content"></div>
@@ -23,65 +23,189 @@
         <div class="swiper-button-prev swiper-button-white"></div>
     </div>
     <!-- end slider -->
-    <div class="container advantages">
-        <div class="row"> 
-            <div class="col-md-12 advantages__title">
-                <p class="text-center">
-                    Наши занятия помогают прививать любовь к спорту с ранних лет – тренер определяет индивидуальные способности вашего ребенка и бережно развивает их в процессе тренировок    
-                </p>
-            </div>
+    <section class="container section advantages">
+        <div class="section__title">
+            Наши занятия помогают прививать любовь к спорту с ранних лет – тренер определяет индивидуальные способности вашего ребенка и бережно развивает их в процессе тренировок    
         </div>
         <div class="row">
             <div class="col-md-3 advantages__item">
-                <div class="advantages__icon" style="background-image: url('/advantages/time.png')"></div>
+                <div class="advantages__icon" style="background-image: url('/advantages/time.png')">
+                </div>
                 <p class="text-center">
                     Тренировка длится до 45 минут
                 </p>
             </div>
             <div class="col-md-3 advantages__item">
-                <div class="advantages__icon" style="background-image: url('/advantages/football.png')"></div>
+                <div class="advantages__icon" style="background-image: url('/advantages/football.png')">
+                </div>
                 <p class="text-center">
                     Мини-группы по 6-10 человек
                 </p>
             </div>
             <div class="col-md-3 advantages__item">
-                <div class="advantages__icon" style="background-image: url('/advantages/ball.png')"></div>
+                <div class="advantages__icon" style="background-image: url('/advantages/ball.png')">
+                </div>
                 <p class="text-center">
                     Первая тренировка — бесплатно!
                 </p>
             </div>
             <div class="col-md-3 advantages__item">
-                <div class="advantages__icon" style="background-image: url('/advantages/mother-and-child.png')"></div>
+                <div class="advantages__icon" style="background-image: url('/advantages/mother-and-child.png')">
+                </div>
                 <p class="text-center">
                     Упражнения безопасны для самых маленьких
                 </p>
             </div>
         </div>
-    </div>
-    <div class="container">
-        <h2 class="text-center">Добро пожаловать</h2>
-        <div>
-            <p>Рады приветствовать Вас на сайте детской футбольной школы для детей.</p>
-            <p>Украинская футбольная школа UFS направлена на обучение футболу детей от 4 до 8 лет. Наши тренера настоящие профессионалы, которые всегда найдут особый подход к каждому молодому футболисту. Тренировочный процесс специально разработан и адаптирован для детей этого возраста.</p>
-            <p>Основными принципами тренировок являются: физическое развитие детей, формирование основных технических навыков, дисциплина, работа в команде, зарождение и развитие футбольного мышления.</p>
-            <p>Чтобы увидеть процесс тренировки приходите к нам на ознакомительное занятие!</p>
+    </section>
+    <!-- slider -->
+    <div class="swiper-container slider slider--slogan">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('/slider2/slider-1.JPG')"> 
+                <div class="container">
+                    <div class="swiper-content">
+                        <div class="swiper__title">Школа UFS это:</div>
+                        <p class="text-center">
+                        Украинская футбольная школа UFS направлена на обучение футболу детей от 4 до 8 лет. Наши тренера настоящие профессионалы, которые всегда найдут особый подход к каждому молодому футболисту. Тренировочный процесс специально разработан и адаптирован для детей этого возраста.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="swiper-slide" style="background-image: url('/slider/slider-2.JPG')">
+                <div class="swiper-content">
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('/slider/slider-3.JPG')"> 
+                <div class="swiper-content">
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('/slider/slider-4.JPG')"> 
+                <div class="swiper-content">
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image: url('/slider/slider-5.JPG')"> 
+                <div class="swiper-content">
+                </div>
+            </div> -->
         </div>
-        <h2 class="text-center">Отзывы</h2>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+    </div>
+    <!-- end slider -->
+    <section class="container section">
+        <h3 class="section__title">
+        Отзывы 
+        </h3>
         <div class="row">
-            <div class="col-md-6 row testimonial">
-                <div class="col-md-5 testimonial__photo" style="background-image: url('/reviewers/review1.jpg')"></div>
-                <div class="col-md-7">
-                    <h4 class="text-left">Елена Баранова</h4>
-                    <p>Мне очень понравилось то внимание и тот профессионализм с каким Ваши тренеры занимаются с мальчишками! Я уверена что при таком подходе к ним у нас будут не только хорошие спортсмены но и настоящие мужчины расти! Большое ВАМ спасибо!</p>
+            <div class="col-md-4 testimonials">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="testimonials__name">
+                            <p>Андрей</p>
+                        </div>
+                        <div class="testimonials__date">
+                            <p>12 декабря 2015</p>
+                        </div>
+                        <div class="testimonials__stars">
+                            <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="testimonials__photo" style="background-image: url('/reviewers/review1.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__text">
+                    <p>
+                    Мне очень понравилось то внимание и тот профессионализм с каким Ваши тренеры занимаются с мальчишками! Я уверена что при таком подходе к ним у нас будут не только хорошие спортсмены но и настоящие мужчины расти! Большое ВАМ спасибо!
+                    </p>
                 </div>
             </div>
-            <div class="col-md-6 row testimonial">
-                <div class="col-md-5 testimonial__photo" style="background-image: url('/reviewers/review2.jpg')"></div>
-                <div class="col-md-7">
-                    <h4 class="text-left">Илья Янин</h4>
-                    <p>Ребята молодцы) добивайтесь положительных результатов, продвигайтесь по карьерной лестнице! успехов, удачи и везенья!!!</p>
+            <div class="col-md-4 testimonials">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="testimonials__name">
+                            <p>Илья</p>
+                        </div>
+                        <div class="testimonials__date">
+                            <p>14 января 2016</p>
+                        </div>
+                        <div class="testimonials__stars">
+                            <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="testimonials__photo" style="background-image: url('/reviewers/review2.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__text">
+                    <p>
+                    Ребята молодцы) добивайтесь положительных результатов, продвигайтесь по карьерной лестнице! успехов, удачи и везенья!!!
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4 testimonials">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="testimonials__name">
+                            <p>Вадим</p>
+                        </div>
+                        <div class="testimonials__date">
+                            <p>8 сентября 2014</p>
+                        </div>
+                        <div class="testimonials__stars">
+                            <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="testimonials__photo" style="background-image: url('/reviewers/review3.png')">
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__text">
+                    <p>
+                    Хотелось бы поблагодарить всех организаторов футбольной школы в г. Белгород (СК им. С. Хоркиной), за их проффесианализм и душевный подход к детям. Ребёнку очень нравится заниматься, ждет с нетерпением каждую тренировку. После каждой тренировки гора эмоций.
+                    </p>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="container section partnership">
+        <div class="row">
+            <div class="section__title">
+                У нас не только тренировки.<br>
+                Мы заботимся о наших маленьких<br>футболистах 
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="partnership__logo" style="background-image: url('/dynamo_logo.png')">
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="partnership__motivation">
+                    <ul>
+                        <li class="partnership__circle"><span class="partnership__text">Возим ребят на экскурсии. Например, на стадион<br>и в музей ФК «Динамо» (Киев).</span></li>
+                        <li class="partnership__circle"><span class="partnership__text">Лучшим ученикам даем рекомендации<br>в спортивные школы ФК «Динамо» (Киев).</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 </template>
