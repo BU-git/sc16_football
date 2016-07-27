@@ -5,7 +5,8 @@
     background-image: url('border.png');
     background-repeat: repeat-x;
     bottom: 0;
-}.swiper{
+}
+.swiper{
     &-slide{
         height: 616px;
         background: #fff no-repeat 50% 50%;
@@ -29,6 +30,13 @@
         @include mobile{
             font-size: 20px;
         }
+}
+.swiper-slide{
+    height: 616px;
+    background: #fff no-repeat 50% 50%;
+    background-size: cover;
+    @include tablet{
+        height: 500px;
     }
     &-content{
         padding: 40px;
@@ -44,12 +52,9 @@
         }
     }
 }
-.advantages
-{
+.advantages{
     color: $primary-color;
     font-weight: bold;
-
-    
     &__item {
         padding: 35px 25px 25px;
         font-size: 20px;
@@ -64,12 +69,12 @@
 }
 .testimonials{
     @include mobile{
-            padding: 15px 0 15px 0;
-            border-bottom: 1px solid #acacac;
-            &:last-child{
-                border: 0;
-            }
+        padding: 15px 0 15px 0;
+        border-bottom: 1px solid #acacac;
+        &:last-child{
+            border: 0;
         }
+    }
     &__name{
         font-size: 24px;
         color: $primary-color;
@@ -116,10 +121,8 @@
         }
     }
 }
-.partnership
-{
+.partnership{
     padding: 0 0 50px 0;
-    
     &__logo {
         height: 210px;
         width: 130px;
@@ -138,5 +141,26 @@
     }
     &__text{
         color: black;
+    }
+}
+
+.advantages{
+    color: #005bae;
+    font-weight: bold;
+    &__title {
+        padding: 120px 90px 55px;
+        font-size: 28px;
+        line-height: 34px;
+    }
+    &__item {
+        padding: 35px 25px 90px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    &__icon {
+        width: 111px;
+        height: 112px;
+        margin: 0 auto 30px;
+        background: #fff no-repeat 50% 50%;
     }
 }
