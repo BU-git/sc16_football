@@ -152,8 +152,51 @@
         font-size: 28px;
         line-height: 34px;
     }
+}
+.swiper{
+    &-slide{
+        height: 616px;
+        background: #fff no-repeat 50% 50%;
+        background-size: cover;
+        @include tablet{
+            padding: 90px 0 0 0;
+            height: 500px;
+        }
+        @include mobile{
+            padding: 0;
+            height: 300px;
+        }
+    } 
+    &__title{
+        font-size: 50px;
+        text-align: center;
+        padding: 0 0 25px 0;
+        @include tablet{
+            font-size: 20px;
+        }
+        @include mobile{
+            font-size: 20px;
+        }
+    }
+    &-content{
+        padding: 40px;
+        font-size: 40px;
+        font-weight: bold;
+        color: #FFFFFF;
+        @include tablet{
+            font-size: 18px;
+        }
+        @include mobile{
+            padding: 35px;
+            font-size: 12px;
+        }
+    }
+}
+.advantages{
+    color: $primary-color;
+    font-weight: bold;
     &__item {
-        padding: 35px 25px 90px;
+        padding: 35px 25px 25px;
         font-size: 20px;
         line-height: 25px;
     }
@@ -162,5 +205,82 @@
         height: 112px;
         margin: 0 auto 30px;
         background: #fff no-repeat 50% 50%;
+    }
+}
+.testimonials{
+    @include mobile{
+            padding: 15px 0 15px 0;
+            border-bottom: 1px solid #acacac;
+            &:last-child{
+                border: 0;
+            }
+        }
+    &__name{
+        font-size: 24px;
+        color: $primary-color;
+        font-weight: bold;
+        @include tablet{
+            text-align: center;
+        }
+    }
+    &__date{
+        font-size: 14px;
+        color: #acacac;
+        @include tablet{
+            text-align: center;
+        }
+    }
+    &__photo{
+        margin-left: 25px;
+        width: 125px;
+        height: 125px;
+        background: #fff no-repeat 50% 50%;
+        background-size: cover;
+        @include tablet{
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+    }
+    &__text{
+        padding: 25px 0 0 0;
+        font-size: 18px;
+        @include tablet{
+            text-align: center;
+        }
+    }
+    &__stars{
+        @include mobile{
+            text-align: center;
+        }
+    }
+    .glyphicon{
+        &-star{
+            color: blue;
+            height: 25px;
+            width: 25px;
+        }
+    }
+}
+.partnership{
+    padding: 0 0 50px 0;
+    
+    &__logo {
+        height: 210px;
+        width: 130px;
+        background: #fff no-repeat 50% 50%;
+        background-size: cover;
+        @include tablet{
+            margin: 0 auto;
+        }
+    }
+    &__circle{
+        color: $primary-color;
+        padding: 10px;
+    }
+    &__motivation {
+        font-size: 28px;
+    }
+    &__text{
+        color: black;
     }
 }
