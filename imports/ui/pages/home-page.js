@@ -40,3 +40,13 @@ Template.homePage.helpers({
         return News.find({}, {sort: {createdAt: -1}, limit: 6}).fetch();
     }
 });
+
+Template.homePage.onCreated(function(){
+    this.subscribe('news');
+});
+
+Template.homePage.helpers({
+    news: function(){
+        return News.find().fetch();
+    }
+});
