@@ -10,7 +10,8 @@
         <!-- description -->
         <div class="form-group">
             <label for="js-news-desc">Краткое описание</label>
-            <textarea id="js-news-desc" class="form-control" rows="3" placeholder="Введите краткое описание новости" required></textarea>
+            <textarea id="js-news-desc" class="form-control" rows="2" maxlength="200" placeholder="Введите краткое описание новости" required></textarea>
+            <p class="help-block">Максимум 200 символов</p>
         </div>
         <!-- upload img -->
         {{#with currentUpload}}
@@ -26,7 +27,7 @@
             </div>
         {{/with}}
         <!-- submit btn -->
-        <button type="submit" class="btn btn-default">Добавить новость</button>
+        <button type="submit" class="btn btn-primary">Добавить новость</button>
     </form>
 
     <h3>Новости</h3>

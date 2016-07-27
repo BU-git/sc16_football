@@ -13,3 +13,13 @@ $tablet: 768px;
     @content;
   }
 }
+
+
+// clear
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

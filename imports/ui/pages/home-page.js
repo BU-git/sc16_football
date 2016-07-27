@@ -1,6 +1,7 @@
 import './home-page.html';
 
 import { Template } from 'meteor/templating';
+import { News } from '../../api/news.js';
 
 Template.homePage.onRendered(function() {
     var mySwiper = $('.slider--header').swiper({
@@ -28,4 +29,14 @@ Template.homePage.onRendered(function() {
         //etc..
     });
 
+});
+
+Template.homePage.onCreated(function(){
+    this.subscribe('news');
+});
+
+Template.homePage.helpers({
+    news: function(){
+        return News.find().fetch();
+    }
 });
