@@ -1,0 +1,41 @@
+<template name="enrollModal">
+<div class="modal fade bs-example-modal-sm modal--enroll" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h3>Запись на бесплатное занятие</h3>
+                <form class="form" id="js-enroll">
+                    <div class="form-group">
+                        <label for="js-enroll-parent">Имя родителя</label>
+                        <input type="text" class="form-control" id="js-enroll-parent" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="js-enroll-child">Имя футболиста</label>
+                        <input type="text" class="form-control" id="js-enroll-child" placeholder="Имя футболиста" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="js-enroll-age">Возраст футболиста</label>
+                        <input type="number" class="form-control" id="js-enroll-age" placeholder="Возраст" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="js-enroll-phone">Номер телефона</label>
+                        <input type="tel" class="form-control" id="js-enroll-phone" placeholder="0634455667" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="js-enroll-email">Email</label>
+                        <input type="email" class="form-control" id="js-enroll-email" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="js-enroll-school">Какую школу удобнее посещать</label>
+                        <select class="form-control" id="js-enroll-school">
+                            <option>Русановка</option>
+                            <option>Соломенка</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-default">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</template>

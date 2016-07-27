@@ -8,6 +8,7 @@ import '../../ui/components/header.js';
 import '../../ui/components/header-admin.js';
 import '../../ui/components/sidebar-admin.js';
 import '../../ui/components/footer.js';
+import '../../ui/components/enroll-modal.js';
 
 import '../../ui/pages/admin-news-page.js';
 
@@ -24,42 +25,35 @@ import adminUser from '../../modules/admin-user';
 FlowRouter.route('/about', {
   name: 'aboutPage',
   action() {
-    BlazeLayout.render('mainLayout', { main: 'aboutPage', header: 'header', footer: 'footer' });
+    BlazeLayout.render('mainLayout', { main: 'aboutPage', header: 'header'});
   },
 });
 
 FlowRouter.route('/', {
   name: 'homePage',
   action() {
-    BlazeLayout.render('mainLayout', { main: 'homePage', header: 'header', footer: 'footer' });
+    BlazeLayout.render('mainLayout', { main: 'homePage', header: 'header'});
   },
 });
 
 FlowRouter.route('/contact', {
   name: 'contactPage',
   action() {
-    BlazeLayout.render('mainLayout', { main: 'contactPage', header: 'header', footer: 'footer' });
+    BlazeLayout.render('mainLayout', { main: 'contactPage', header: 'header'});
   },
 });
 
 FlowRouter.route('/gallery', {
   name: 'galleryPage',
   action() {
-    BlazeLayout.render('mainLayout', { main: 'galleryPage', header: 'header', footer: 'footer' });
+    BlazeLayout.render('mainLayout', { main: 'galleryPage', header: 'header'});
   },
 });
 
 FlowRouter.route('/team', {
   name: 'teamPage',
   action() {
-    BlazeLayout.render('mainLayout', { main: 'teamPage', header: 'header', footer: 'footer' });
-  },
-});
-
-FlowRouter.route('/gallery', {
-  name: 'galleryPage',
-  action() {
-    BlazeLayout.render('mainLayout', { main: 'galleryPage', header: 'header', footer: 'footer' });
+    BlazeLayout.render('mainLayout', { main: 'teamPage', header: 'header'});
   },
 });
 
