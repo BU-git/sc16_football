@@ -1,5 +1,5 @@
 <template name="headerAdmin">
-    <nav class="navbar navbar-inverse">
+    <nav class="navbar navbar-admin">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -14,12 +14,10 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="/">Перейти на сайт</a></li>
+                    {{#if isInRole 'admin'}}
+                    <li><button type="button" class="btn navbar-btn" id="logout">Выйти</button></li>
+                    {{/if}}
                 </ul>
-                {{#if isInRole 'admin'}}
-                    <div class="navbar-right">
-                        <button type="button" class="btn btn-default navbar-btn" id="logout">Выйти</button>
-                    </div>
-                {{/if}}
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->
     </nav>

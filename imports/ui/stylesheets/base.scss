@@ -7,7 +7,8 @@ body{
     font-family: 'Roboto', sans-serif;
 }
 .section{
-    padding: 45px 0;
+    padding-top: 45px;
+    padding-bottom: 45px;
     &--dark{
         background-color: rgba(158, 158, 158, 0.12);
     }
