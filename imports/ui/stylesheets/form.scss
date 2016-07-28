@@ -10,3 +10,13 @@
         resize: none;
     }
 }
+
+.btn{
+    background: $primary-color;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+}

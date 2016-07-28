@@ -48,6 +48,12 @@
         }
         li{
             float: none;
+            font-weight: 300;
+            &:hover{
+                a{
+                    color: $primary-color;
+                }
+            }
             a{
                 color: #fff;
             }
@@ -55,5 +61,5 @@
     }
 }
 .icon-bar{
-    background: #005bae;
+    background: $primary-color;
 }
