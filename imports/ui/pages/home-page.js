@@ -4,26 +4,26 @@ import { Template } from 'meteor/templating';
 import { News } from '../../api/news.js';
 
 Template.homePage.onRendered(function() {
-    var mySwiper = $('.slider--header').swiper({
+    var swiperHeader = $('.slider--header').swiper({
     //Your options here:
         mode:'horizontal',
         loop: true,
         autoplay: 3000,
         speed: 500,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
+        nextButton: '.slider--header .swiper-button-next',
+        prevButton: '.slider--header .swiper-button-prev',
         paginationClickable: true,
         effect: 'fade'
         //etc..
     });
-    var mySwiper = $('.slider--slogan').swiper({
+    var swiperSlogan = $('.slider--slogan').swiper({
     //Your options here:
         mode:'horizontal',
         loop: true,
         autoplay: 3000,
         speed: 500,
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
+        nextButton: '.slider--slogan .swiper-button-next',
+        prevButton: '.slider--slogan .swiper-button-prev',
         paginationClickable: true,
         effect: 'fade'
         //etc..

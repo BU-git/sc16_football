@@ -1,0 +1,81 @@
+// common styles
+.swiper-slide{
+    background: #fff no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+    // color overlay
+    &::before {
+        content: "";
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 5;
+    }
+    .swiper-content{
+        position: relative;
+        z-index: 6;
+    }
+}
+
+// header slider
+.slider--header{
+    height: 500px;
+    @include tablet{
+        height: 340px;
+    }
+    
+    .swiper-content{
+        color: #fff;
+        text-align: left;
+        font-size: 23px;
+    }
+    // border
+    &::after{
+        content: '';
+        display: block;
+        height: 58px;
+        background-image: url('border.png');
+        background-repeat: repeat-x;
+        bottom: 0;
+    }
+}
+
+// slogan slider
+
+.slider--slogan{
+    height: 350px;
+    @include tablet{
+        height: 300px;
+    }
+
+    .swiper-content{
+        position: relative;
+        z-index: 6;
+        padding: 40px;
+        font-size: 23px;
+        color: #FFFFFF;
+        text-align: center;
+        @include tablet{
+            font-size: 18px;
+        }
+        @include mobile{
+            padding: 35px;
+            font-size: 12px;
+        }
+    }
+
+    .slider__title{
+        font-size: 27px;
+        text-align: center;
+        padding: 0 0 25px 0;
+        @include tablet{
+            font-size: 20px;
+        }
+        @include mobile{
+            font-size: 20px;
+        }
+    }
+}
