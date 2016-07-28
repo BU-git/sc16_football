@@ -9,12 +9,16 @@ body{
 .section{
     padding-top: 45px;
     padding-bottom: 45px;
+    @include mobile{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
     &--dark{
-        background-color: rgba(158, 158, 158, 0.12);
+        background-color: $dark;
     }
     &__title{
         color: $primary-color;
-        padding: 35px 0;
+        margin: 35px 0;
         text-transform: uppercase;
         font-weight: 400;
         font-size: 25px;
@@ -27,18 +31,47 @@ body{
             background-color: #338BCB;
             margin: 8px auto 0 auto;
         }
-        @include tablet{
-            text-align: center;
-            padding: 15px 0;
+        @include mobile{
+            margin: 20px 0;
         }
     }
     &__sub-title{
         text-align: center;
         color: #acacac;
-        padding: 10px 0;
-        text-transform: uppercase;
         font-weight: 400;
         font-size: 17px;
-        margin-bottom: 20px;
+        margin: 30px 0;
+        @include mobile{
+            margin: 20px 0;
+        }
+    }
+}
+
+.socials{
+    &__icon{
+        display: inline-block;
+        width: 35px;
+        height: 23px;
+        background: transparent no-repeat 50% 50%;
+        background-size: contain;
+        @include mobile{
+            text-align: center;
+            margin-top: 30px;
+        }
+        &--fb{
+            background-image: url('/icons/fb.svg')
+        }
+        &--vk{
+            background-image: url('/icons/vk.svg')
+        }
+        &--insta{
+            background-image: url('/icons/insta.svg')
+        }
+    }
+}
+
+.contact-info{
+    &__tel{
+        color: #fff;
     }
 }

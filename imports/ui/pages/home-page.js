@@ -37,6 +37,6 @@ Template.homePage.onCreated(function(){
 
 Template.homePage.helpers({
     news: function(){
-        return News.find({}, {sort: {createdAt: 1}, limit: 6}).fetch();
+        return News.find({}, {sort: {dateStamp: -1}, limit: 6}).fetch();
     }
 });

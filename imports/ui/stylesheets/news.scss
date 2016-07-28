@@ -1,7 +1,9 @@
 .news{
     flex-basis: 30%;
     @include clearfix;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid $second-color;
+    background: $dark;
     @include tablet{
         width: 45%;
         flex-basis: 45%;
@@ -25,10 +27,9 @@
         background-size: cover;
     }
     &__info{
-        padding: 15px 0px;
+        padding: 15px;
     }
     &__title{
-        font-weight: bold;
         color: $primary-color;
         font-size: 19px;
     }
@@ -38,6 +39,7 @@
         padding: 0;
         margin: 0;
         text-align: right;
+        letter-spacing: 2px;
     }
     &__description{
         text-align: justify;

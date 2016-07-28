@@ -9,15 +9,6 @@ Template.sidebarAdmin.onCreated(function(){
 
 Template.sidebarAdmin.helpers({
     unreadCount: function(){
-        var enrolls = Enrolls.find();
-
-        var count = 0;
-        enrolls.forEach(function(enrolls){
-            if(this.status == false){
-                count++
-            }
-        });
-
-        return count;
+        return Enrolls.find({"status": false}).count()
     }
 })

@@ -44,9 +44,9 @@ Template.adminInboxPage.helpers({
                     label: "Статус",
                     fn: function(value, object){
                         if (value == true){
-                            return new Spacebars.SafeString('<span>Ответили</span>');
+                            return new Spacebars.SafeString('Обработано <span class="js-responded glyphicon glyphicon-ok"></span>');
                         } else{
-                            return new Spacebars.SafeString('<span>Ожидает ответа</span>');
+                            return new Spacebars.SafeString('Не обработано <span class="js-respond glyphicon glyphicon-ok"></span>');
                         }
                         
                     }
@@ -54,4 +54,16 @@ Template.adminInboxPage.helpers({
             ]
         };
     }
+});
+
+Template.adminInboxPage.events({
+    'click #enrolls tr': function(e, template){
+        if($(e.target).hasClass('js-respond')){
+            Enrolls.update({_id : this._id},{$set:{'status' : true}});
+            sAlert.success('Заявка обработана')
+        } else if($(e.target).hasClass('js-responded')){
+            Enrolls.update({_id : this._id},{$set:{'status' : false}});
+            sAlert.success('Заявка не обработана')
+        }
+    },
 });

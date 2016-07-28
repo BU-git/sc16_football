@@ -1,0 +1,20 @@
+.news-controls{
+    padding: 3px 5px;
+    @include clearfix;
+    &__btn{
+        cursor: pointer;
+        &--remove{
+            float: right;
+        }
+    }
+}
+
+.js-responded{
+    color: #5fba7d;
+    cursor: pointer;
+}
+
+.js-respond{
+    color: #e8e8e8;
+    cursor: pointer;
+}

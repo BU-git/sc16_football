@@ -20,6 +20,14 @@
     }
 }
 
+.slider{
+    &__arrow{
+        @include mobile{
+            display: none;
+        }
+    }
+}
+
 // header slider
 .slider--header{
     height: 500px;

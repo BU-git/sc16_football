@@ -39,6 +39,7 @@ Template.adminNewsPage.events({
             mm='0'+mm
         }
         today = dd+'/'+mm+'/'+yyyy;
+        dateStamp = new Date;
 
         var titleVal = $('#js-news-title').val();
         var descriptionVal = $('#js-news-desc').val();
@@ -48,9 +49,12 @@ Template.adminNewsPage.events({
             title: titleVal,
             description: descriptionVal,
             thumbnail: thumbnail,
-            date: today
+            date: today,
+            dateStamp: dateStamp
         });
 
+        sAlert.success('Новость успешно добавлена!')
+        template.find("#js-add-news").reset();
     },
     'change #js-thumbnail-input': function (e, template) {
         if (e.currentTarget.files && e.currentTarget.files[0]) {
@@ -77,5 +81,9 @@ Template.adminNewsPage.events({
 
             upload.start();
         }
+    },
+    'click .js-remove': function(e, template){
+        News.remove(this._id);
+        sAlert.success('Новость удалена')
     }
 });
