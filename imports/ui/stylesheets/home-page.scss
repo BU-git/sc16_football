@@ -49,6 +49,16 @@
             text-align: center;
         }
     }
+}
+
+.advantages {
+    color: #005bae;
+    font-weight: bold;
+    &__title {
+        padding: 120px 90px 55px;
+        font-size: 28px;
+        line-height: 34px;
+    }
     .glyphicon{
         &-star{
             color: $primary-color;
@@ -104,3 +114,5 @@
         }
     }
 }
+
+
