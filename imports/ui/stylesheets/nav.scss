@@ -24,6 +24,9 @@
         li{
             float: none;
             font-weight: 300;
+            @include mobile{
+
+            }
             &:hover{
                 a{
                     color: $primary-color;
@@ -31,6 +34,13 @@
             }
             a{
                 color: #fff;
+            }
+            &.active{
+                color: $primary-color;
+                background-color: #eee;
+                a{
+                    color: $primary-color;
+                }
             }
         }
     }

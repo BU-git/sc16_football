@@ -46,15 +46,6 @@
         align-items: center;
         justify-content: center;
     }
-    // border
-    &::after{
-        content: '';
-        display: block;
-        height: 58px;
-        background-image: url('border.png');
-        background-repeat: repeat-x;
-        bottom: 0;
-    }
 }
 
 // slogan slider

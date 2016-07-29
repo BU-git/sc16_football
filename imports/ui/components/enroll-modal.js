@@ -28,7 +28,7 @@ Template.enrollModal.events({
             status: false
         });
 
-        $('#js-enroll').modal('hide');
+        $('.modal--enroll').modal('hide');
         sAlert.success('Ваша заявка успешно отправлена. Вам перезвонят');
     }
 })
