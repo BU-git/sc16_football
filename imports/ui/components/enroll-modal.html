@@ -19,11 +19,11 @@
                     </div>
                     <div class="form-group">
                         <label for="js-enroll-phone">Номер телефона</label>
-                        <input type="tel" class="form-control" id="js-enroll-phone" placeholder="0634455667" required>
+                        <input type="tel" pattern="(\+?\d[- .]*){7,13}" class="form-control" id="js-enroll-phone" placeholder="0634455667" required>
                     </div>
                     <div class="form-group">
                         <label for="js-enroll-email">Email</label>
-                        <input type="email" class="form-control" id="js-enroll-email" placeholder="example@gmail.com" required>
+                        <input type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" class="form-control" id="js-enroll-email" placeholder="example@gmail.com" required>
                     </div>
                     <div class="form-group">
                         <label for="js-enroll-school">Какую школу удобнее посещать</label>
