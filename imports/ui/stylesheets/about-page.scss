@@ -1,0 +1,12 @@
+.partnership{
+    &__logo {
+        height: 240px;
+        width: 130px;
+        background: transparent no-repeat 50% 50%;
+        background-size: contain;
+        margin: 0 0 0 auto;
+        @include tablet{
+            margin: 0 auto;
+        }
+    }
+}
