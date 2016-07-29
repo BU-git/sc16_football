@@ -14,22 +14,22 @@
     border: none;
 }
 .week-calendar {
-    font-weight: bold;
+    font-weight: 500;
     font-size : 22px;
     padding-bottom: 110px;
     &__title{
-        font-weight: bold;
+        font-weight: 500;
         font-size: 36px;
-        color: #005bae;
+        color: $primary-color;
         margin: 35px;
     }
     &__subtitle {
         font-size : 22px;
-        color: #005bae;
+        color: $primary-color;
     }
     &__week{
         padding-top: 65px;
-        border-bottom: 12px solid #005bae;
+        border-bottom: 12px solid $primary-color;
         li { 
             background-color: #e9e9e9;
             margin-right: 11px;
@@ -41,31 +41,31 @@
                 margin-bottom: 0;
             }
             &.active {
-                border-bottom: 5px solid #005bae;
+                border-bottom: 5px solid $primary-color;
                 .week-calendar__week-day {
                     color: #fff;
                 }
                 a{   
-                    background-color: #005bae;
+                    background-color: $primary-color;
                     border-radius:0;
                     margin-right: 0;
                     border: none;
                     border-bottom: 5px solid transparent;
                     &:hover{
-                        background-color: #005bae;
-                        border-bottom: 5px solid #005bae;
+                        background-color: $primary-color;
+                        border-bottom: 5px solid $primary-color;
                     }
                     &:focus{
                         outline: none;
-                        background-color: #005bae;
-                        border-bottom: 5px solid #005bae;
+                        background-color: $primary-color;
+                        border-bottom: 5px solid $primary-color;
                     }
                 }
             }
             a:hover{    
                 margin-bottom: 0;
-                background-color: #005bae;
-                border-bottom: 5px solid #005bae;
+                background-color: $primary-color;
+                border-bottom: 5px solid $primary-color;
                 .week-calendar__week-day {
                     color: #fff;
                 }
@@ -99,7 +99,7 @@
 }
 .event {
     padding-top: 80px;
-    font-weight: bold;
+    font-weight: 500;
     &__time {
         padding-top: 10px;
         padding-right: 35px;
@@ -109,7 +109,7 @@
     &__title { 
         margin-bottom: 30px;
         font-size: 24px;
-        font-weight: bold;
+        font-weight: 500;
     }
     &__description {
         font-size: 18px;
