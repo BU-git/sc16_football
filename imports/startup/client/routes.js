@@ -10,6 +10,8 @@ import '../../ui/components/sidebar-admin.js';
 import '../../ui/components/footer.js';
 import '../../ui/components/enroll-modal.js';
 
+import '../../ui/pages/login-page.js';
+import '../../ui/pages/admin-page.js';
 import '../../ui/pages/admin-news-page.js';
 import '../../ui/pages/admin-inbox-page.js';
 
@@ -17,9 +19,8 @@ import '../../ui/pages/home-page.js';
 import '../../ui/pages/about-page.js';
 import '../../ui/pages/contact-page.js';
 import '../../ui/pages/team-page.js';
-import '../../ui/pages/admin-page.js';
-import '../../ui/pages/login-page.js';
 import '../../ui/pages/gallery-page.js';
+import '../../ui/pages/news-page.js';
 
 import adminUser from '../../modules/admin-user';
 
@@ -57,6 +58,14 @@ FlowRouter.route('/team', {
     BlazeLayout.render('mainLayout', { main: 'teamPage', header: 'header'});
   },
 });
+
+FlowRouter.route('/news', {
+  name: 'newsPage',
+  action() {
+    BlazeLayout.render('mainLayout', { main: 'newsPage', header: 'header'});
+  },
+});
+
 
 FlowRouter.notFound = {
   action() {
