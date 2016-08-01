@@ -14,6 +14,7 @@ import '../../ui/pages/login-page.js';
 import '../../ui/pages/admin-page.js';
 import '../../ui/pages/admin-news-page.js';
 import '../../ui/pages/admin-inbox-page.js';
+import '../../ui/pages/admin-calendar-page.js';
 
 import '../../ui/pages/home-page.js';
 import '../../ui/pages/about-page.js';
@@ -131,6 +132,7 @@ FlowRouter.route('/admin/news', {
     });
   }
 });
+
 FlowRouter.route('/admin/inbox', {
   name: 'adminInboxPage',
   action() {
@@ -144,4 +146,11 @@ FlowRouter.route('/admin/inbox', {
       }
     });
   }
+});
+
+FlowRouter.route('/admin/calendar', {
+  name: 'adminCalendarPage',
+  action() {
+    BlazeLayout.render('adminLayout', { main: 'adminCalendarPage', sidebar: 'sidebarAdmin' });
+  },
 });

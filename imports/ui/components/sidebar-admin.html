@@ -21,19 +21,10 @@
         <li>
             <a href="/" class="button-tosite">Перейти на сайт</a>
         </li>
-            {{#if isInRole 'admin'}}
+        {{#if isInRole 'admin'}}
         <li>
             <a href="" id="logout" class="button-exit">Выйти</a>
         </li>
-            {{/if}}
-<!--         <li role="presentation" class="{{isActivePath '/admin/calendar'}}">
-            <a class="disabled" href="/admin/calendar">Календарь</a>
-        </li>
-        <li role="presentation" class="{{isActivePath '/admin/gallery'}}">
-            <a class="disabled" href="/admin/gallery">Галлерея</a>
-        </li>
-        <li role="presentation" class="{{isActivePath '/admin/team'}}">
-            <a class="disabled" href="/admin/team">Команда</a>
-        </li> -->
+        {{/if}}
     </ul>
 </template>

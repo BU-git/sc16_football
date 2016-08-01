@@ -35,7 +35,7 @@ Template.addEditEventModal.helpers({
     }
 });
 
-Template.calendarPage.onRendered(function() {
+Template.adminCalendarPage.onRendered(function() {
     this.$('.timepicker').datetimepicker({
         format: 'LT',
         widgetPositioning: {
@@ -78,7 +78,7 @@ Template.addEditEventModal.events({
             if (error) {
                 sAlert.success(error.reason, 'danger');
             } else {
-                sAlert.success(`Event ${ eventModal.type }ed!`, 'success');
+                sAlert.success('Событие отредактировано!');
                 closeModal();
             }
         });
@@ -88,9 +88,9 @@ Template.addEditEventModal.events({
         if (confirm('Are you sure? This is permanent.')) {
             Meteor.call('removeEvent', eventModal.event, (error) => {
                 if (error) {
-                    Bert.alert(error.reason, 'danger');
+                    sAlert.success(error.reason);
                 } else {
-                    Bert.alert('Event deleted!', 'success');
+                    sAlert.success('Событие удалено!');
                     closeModal();
                 }
             });
