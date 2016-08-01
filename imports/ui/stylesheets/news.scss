@@ -1,4 +1,5 @@
 .news{
+    -ms-flex-preferred-size: 30%;
     flex-basis: 30%;
     @include clearfix;
     margin-bottom: 30px;
@@ -6,17 +7,29 @@
     background: $dark;
     @include tablet{
         width: 45%;
+        -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
     }
     @include mobile{
         width: 100%;
+        -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
     }
     &__wrap{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
         align-items: flex-start;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
         justify-content: space-between;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     }
     &__image{
