@@ -1,0 +1,10 @@
+<template name="newsCard">
+    <div class="news">
+        <div class="news__image" style='background-image: url({{this.thumbnail}})'></div>
+        <div class="news__info">
+            <h4 class="news__title">{{this.title}}</h4>
+            <p class="news__date"><span class="glyphicon glyphicon-calendar"></span> {{this.date}}</p>
+            <p class="news__description">{{this.description}}</p>
+        </div>
+    </div>
+</template>

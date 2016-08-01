@@ -1,4 +1,5 @@
 import './home-page.html';
+import '../components/news-card';
 
 import { Template } from 'meteor/templating';
 import { News } from '../../api/news.js';

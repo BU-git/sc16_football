@@ -1,4 +1,5 @@
 import './admin-news-page.html';
+import '../components/news-card-admin';
 
 import { Template } from 'meteor/templating';
 import { News } from '../../api/news.js';

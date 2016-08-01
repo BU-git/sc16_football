@@ -34,17 +34,7 @@
     <h3>Новости</h3>
     <div class="news__wrap">
         {{#each news}}
-        <div class="news">
-            <div class="news-controls">
-                <span class="news-controls__btn news-controls__btn--remove js-remove glyphicon glyphicon-remove"></span>
-            </div>
-            <div class="news__image" style='background-image: url({{this.thumbnail}})'></div>
-            <div class="news__info">
-                <h4 class="news__title">{{this.title}}</h4>
-                <p class="news__date"><span class="glyphicon glyphicon-calendar"></span> {{this.date}}</p>
-                <p class="news__description">{{this.description}}</p>
-            </div>
-        </div>
+            {{> newsCardAdmin}}
         {{/each}}
     </div>
 
