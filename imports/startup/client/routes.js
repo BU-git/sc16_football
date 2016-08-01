@@ -21,6 +21,8 @@ import '../../ui/pages/contact-page.js';
 import '../../ui/pages/team-page.js';
 import '../../ui/pages/gallery-page.js';
 import '../../ui/pages/news-page.js';
+import '../../ui/pages/calendar-page.js';
+import '../../ui/pages/add-event.js';
 
 import adminUser from '../../modules/admin-user';
 
@@ -66,6 +68,12 @@ FlowRouter.route('/news', {
   },
 });
 
+FlowRouter.route('/calendar', {
+  name: 'calendarPage',
+  action() {
+    BlazeLayout.render('mainLayout', { main: 'calendarPage', header: 'header'});
+  },
+});
 
 FlowRouter.notFound = {
   action() {

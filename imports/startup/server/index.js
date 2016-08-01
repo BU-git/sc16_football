@@ -1,5 +1,6 @@
 import '../../api/methods.js';
 import '../../api/server/publications.js';
+import '../../api/methods/events.js';
 
 import './fixtures.js'
 
