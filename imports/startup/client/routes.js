@@ -70,13 +70,28 @@ FlowRouter.notFound = {
 // admin///
 // ///////
 
+FlowRouter.route('/login', {
+  name: 'loginPage',
+  action() {
+    Tracker.autorun(function() {
+      if(!Meteor.loggingIn()) {
+        if(!adminUser(Meteor.userId())) {
+          BlazeLayout.render('adminLayout', { main: 'loginPage' });
+        } else {
+          FlowRouter.go('/admin');
+        }
+      }
+    });
+  }
+});
+
 FlowRouter.route('/admin', {
   name: 'adminPage',
   action() {
     Tracker.autorun(function() {
       if(!Meteor.loggingIn()) {
         if(!adminUser(Meteor.userId())) {
-          BlazeLayout.render('adminLayout', { main: 'loginPage' });
+          FlowRouter.go('/login');
         } else {
           BlazeLayout.render('adminLayout', { main: 'adminPage', sidebar: 'sidebarAdmin' });
         }
@@ -88,12 +103,28 @@ FlowRouter.route('/admin', {
 FlowRouter.route('/admin/news', {
   name: 'adminNewsPage',
   action() {
-    BlazeLayout.render('adminLayout', { main: 'adminNewsPage', sidebar: 'sidebarAdmin' });
-  },
+    Tracker.autorun(function() {
+      if(!Meteor.loggingIn()) {
+        if(!adminUser(Meteor.userId())) {
+          FlowRouter.go('/login');
+        } else {
+          BlazeLayout.render('adminLayout', { main: 'adminNewsPage', sidebar: 'sidebarAdmin' });
+        }
+      }
+    });
+  }
 });
 FlowRouter.route('/admin/inbox', {
   name: 'adminInboxPage',
   action() {
-    BlazeLayout.render('adminLayout', { main: 'adminInboxPage', sidebar: 'sidebarAdmin' });
-  },
+    Tracker.autorun(function() {
+      if(!Meteor.loggingIn()) {
+        if(!adminUser(Meteor.userId())) {
+          FlowRouter.go('/login');
+        } else {
+          BlazeLayout.render('adminLayout', { main: 'adminInboxPage', sidebar: 'sidebarAdmin' });
+        }
+      }
+    });
+  }
 });
