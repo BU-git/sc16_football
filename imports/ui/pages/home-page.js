@@ -46,8 +46,10 @@ Template.homePage.onRendered(function() {
             right: 'next'
         },
         defaultView: 'basicWeek',
-        сolumnFormat: {
-            week: 'dddd D/M'
+        columnFormat: {
+            month: 'ddd',
+            week: 'dddd DD/MM',
+            day: 'dddd DD/MM'
         },
         windowResize: function(view) {
             if ($(window).width() < 768) {
