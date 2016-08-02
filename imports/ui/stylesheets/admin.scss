@@ -8,7 +8,20 @@
         }
     }
 }
+.button{
+    &-exit{
+        color: #c80000;
+    }
+    &-tosite{
+        color: #0eae21;
+    }
+}
+.line{
+    height: 1px;
+    background: $primary-color;
+}
 .hidden-menu {
+    font-size: 16px;
     display: block;
     position: fixed;
     list-style:none;
@@ -55,9 +68,6 @@
 }
 .btn-menu span.first {
     margin-top: 0;
-}
-.hidden-menu-ticker:checked ~ .btn-menu {
-    left: 260px;
 }
 .hidden-menu-ticker:checked ~ .hidden-menu {
     left: 0;

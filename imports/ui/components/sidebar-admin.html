@@ -15,6 +15,17 @@
         <li role="presentation"  class="{{isActivePath '/admin/news'}}">
             <a href="/admin/news">Новости</a>
         </li> 
+        <li role="presentation"  class="{{isActivePath '/admin/news'}}">
+            <hr class="line">
+        </li> 
+        <li>
+            <a href="/" class="button-tosite">Перейти на сайт</a>
+        </li>
+            {{#if isInRole 'admin'}}
+        <li>
+            <a href="" id="logout" class="button-exit">Выйти</a>
+        </li>
+            {{/if}}
 <!--         <li role="presentation" class="{{isActivePath '/admin/calendar'}}">
             <a class="disabled" href="/admin/calendar">Календарь</a>
         </li>
