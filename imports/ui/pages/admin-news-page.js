@@ -1,5 +1,7 @@
 import './admin-news-page.html';
 import '../components/news-card-admin';
+import '../components/add-news-modal';
+import '../components/edit-news-modal';
 
 import { Template } from 'meteor/templating';
 import { News } from '../../api/news.js';
@@ -54,6 +56,7 @@ Template.adminNewsPage.events({
             dateStamp: dateStamp
         });
 
+        $('.modal--add-news').modal('hide');
         sAlert.success('Новость успешно добавлена!')
         template.find("#js-add-news").reset();
     },
@@ -83,8 +86,14 @@ Template.adminNewsPage.events({
             upload.start();
         }
     },
-    'click .js-remove': function(e, template){
+    'click .js-btn-remove-news': function(e, template){
         News.remove(this._id);
         sAlert.success('Новость удалена')
+    },
+    'click .js-btn-edit-news': function(e, template){
+       $('.js-modal-edit-news').modal('show');
+    },
+    'submit #js-form-edit-news': function(e, template) {
+        $('.js-modal-edit-news').modal('hide')
     }
 });

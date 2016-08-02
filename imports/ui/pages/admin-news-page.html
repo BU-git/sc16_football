@@ -1,35 +1,6 @@
 <template name="adminNewsPage">
 {{#if Template.subscriptionsReady}}
-
-    <div class="h3">Добавить новую новость</div>
-    <form class="form" id="js-add-news">
-        <!-- title -->
-        <div class="form-group">
-            <label for="js-news-title">Заголовок</label>
-            <input type="text" class="form-control" id="js-news-title" placeholder="Введите название новости" required>
-        </div>
-        <!-- description -->
-        <div class="form-group">
-            <label for="js-news-desc">Краткое описание</label>
-            <textarea id="js-news-desc" class="form-control" rows="2" maxlength="200" placeholder="Введите краткое описание новости" required></textarea>
-            <p class="help-block">Максимум 200 символов</p>
-        </div>
-        <!-- upload img -->
-        {{#with currentUpload}}
-            Uploading <b>{{file.name}}</b>: 
-            <span id="progress">{{progress.get}}%</span>
-        {{else}}
-            <div class="form-group">
-                <label for="js-thumbnail-input">Миниатюра</label>
-                <input type="file" id="js-thumbnail-input">
-                {{#if thumbnailUrl}}
-                <div class="form__thumbnail" style='background-image: url({{thumbnailUrl}})'></div>
-                {{/if}}
-            </div>
-        {{/with}}
-        <!-- submit btn -->
-        <button type="submit" class="btn btn-primary">Добавить новость</button>
-    </form>
+    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target=".modal--add-news">Добавить новость</button>
 
     <h3>Новости</h3>
     <div class="news__wrap">
@@ -38,5 +9,7 @@
         {{/each}}
     </div>
 
+    {{> addNewsModal}}
+    {{> editNewsModal}}
 {{/if}}
 </template>

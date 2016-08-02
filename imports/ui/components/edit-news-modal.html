@@ -1,0 +1,42 @@
+<template name="editNewsModal">
+<div class="modal fade bs-example-modal-sm modal--edit-news js-modal-edit-news" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Редактировать новость</h4>
+            </div>
+            <div class="modal-body">
+                <form class="form" id="js-form-edit-news">
+                    <!-- title -->
+                    <div class="form-group">
+                        <label for="js-news-title">Заголовок</label>
+                        <input type="text" class="form-control" id="js-news-title" placeholder="Введите название новости" required>
+                    </div>
+                    <!-- description -->
+                    <div class="form-group">
+                        <label for="js-news-desc">Краткое описание</label>
+                        <textarea id="js-news-desc" class="form-control" rows="2" maxlength="200" placeholder="Введите краткое описание новости" required></textarea>
+                        <p class="help-block">Максимум 200 символов</p>
+                    </div>
+                    <!-- upload img -->
+                    {{#with currentUpload}}
+                        Uploading <b>{{file.name}}</b>: 
+                        <span id="progress">{{progress.get}}%</span>
+                    {{else}}
+                        <div class="form-group">
+                            <label for="js-thumbnail-input">Миниатюра</label>
+                            <input type="file" id="js-thumbnail-input">
+                            {{#if thumbnailUrl}}
+                            <div class="form__thumbnail" style='background-image: url({{thumbnailUrl}})'></div>
+                            {{/if}}
+                        </div>
+                    {{/with}}
+                    <!-- submit btn -->
+                    <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</template>
