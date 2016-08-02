@@ -23,3 +23,11 @@
         }
     }
 }
+.menu{
+    @include mobile{
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 0;
+    }
+}
