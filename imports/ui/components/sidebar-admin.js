@@ -11,4 +11,11 @@ Template.sidebarAdmin.helpers({
     unreadCount: function(){
         return Enrolls.find({"status": false}).count()
     }
-})
+});
+
+Template.sidebarAdmin.events({
+    'click #logout': function(e) {
+        e.preventDefault();
+        Meteor.logout();
+    }
+});
