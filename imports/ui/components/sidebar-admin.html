@@ -1,5 +1,11 @@
 <template name="sidebarAdmin">
-    <ul class="nav nav-pills nav-stacked sidebar-admin">
+    <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+    <label class="btn-menu" for="hmt">
+      <span class="first"></span>
+      <span class="second"></span>
+      <span class="third"></span>
+    </label>
+    <ul class="hidden-menu nav nav-pills nav-stacked sidebar-admin">
         <li role="presentation" class="{{isActivePath '/admin'}}">
             <a href="/admin">Главная</a>
         </li>
@@ -8,7 +14,7 @@
         </li>
         <li role="presentation"  class="{{isActivePath '/admin/news'}}">
             <a href="/admin/news">Новости</a>
-        </li>
+        </li> 
 <!--         <li role="presentation" class="{{isActivePath '/admin/calendar'}}">
             <a class="disabled" href="/admin/calendar">Календарь</a>
         </li>

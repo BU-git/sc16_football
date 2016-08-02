@@ -8,7 +8,60 @@
         }
     }
 }
-
+.hidden-menu {
+    display: block;
+    position: fixed;
+    list-style:none;
+    padding: 10px;
+    margin: 50px 0;
+    box-sizing: border-box;
+    width: 300px;
+    background-color: #eee;
+    height: 100%;
+    top: 0;
+    left: -300px;
+    -webkit-transition: left .2s;
+    transition: left .2s;
+    z-index: 2;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+.hidden-menu-ticker {
+    display: none;
+}
+.btn-menu {
+    color: #fff;
+    background-color: $primary-color;
+    padding: 5px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    -webkit-transition: left .23s;
+    transition: left .23s;
+    z-index: 3;
+    width: 35px;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+}
+.btn-menu span {
+    display: block;
+    height: 5px;
+    background-color: #fff;
+    margin: 5px 0 0;
+    -webkit-transition: all .1s linear .23s;
+    transition: all .1s linear .23s;
+    position: relative;
+}
+.btn-menu span.first {
+    margin-top: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu {
+    left: 260px;
+}
+.hidden-menu-ticker:checked ~ .hidden-menu {
+    left: 0;
+}
 .js-responded{
     color: #5fba7d;
     cursor: pointer;
