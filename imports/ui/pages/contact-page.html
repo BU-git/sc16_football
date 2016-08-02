@@ -1,40 +1,33 @@
 <template name="contactPage">
-    <section class="section container">
+    <section class="section">
         <div class="section__title">СВЯЖИТЕСЬ С НАМИ</div>
-        <div class="row">
-            <div class="col-md-offset-1 col-md-4 contact">
-                <div class="map-container">
-                    {{> googleMap name="rightMap" options=rightMapOptions}}
-                </div>
+        <div class="contact-container">
+            <div class="contact">
                 <h3 class="contact__title"> Соломенский район:</h3>
                 <div class="contact__adress">
                     <p>г. Киев</p>
                     <p>улица Народного ополчения 9</p>
-                    <p>поле и спортивный зал на теретории академии МВД</p>
-                </div>
-                <p class="contact__tel"><a href="tel:+380(67) 47 889 46">Тел. +380 (67) 47 889 46</a></p>
-                <h4>Как добраться:</h4>
-                <div class="contact__adress">
-                    <p>Маршрутки 231, 227, 463д, 550, 220 — выходить на остановке ул. Смилянская</p>
-                    <p>Троллейбусы 21, 40, 40К  — выходить на остановке ул. Смилянская</p>
+                    <p>поле и спортивный зал на теретории академии МВД </p>
+                    <p class="contact__tel"><a href="tel:+380(67) 47 889 46"><br>Тел. +380 (67) 47 889 46</a></p>
                 </div>
             </div>
-            <div class="col-md-offset-2 col-md-4 contact">
-                <div class="map-container">
-                    {{> googleMap name="leftMap" options=leftMapOptions}}
-                </div>
+            <div class="map-container">
+                {{> googleMap name="rightMap" options=rightMapOptions}}
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact">
                 <h3 class="contact__title"> Левый берег:</h3>
                 <div class="contact__adress">
                     <p>г. Киев</p>
                     <p>бульвар Игоря Шамо, 18/2</p>
                     <p>Институт Искусств</p>
                 </div>
-                <p class="contact__tel"><a href="tel:+380(67) 47 889 46">Тел. +380 (67) 47 889 46</a> </p>
-                <h4>Как добраться:</h4>
-                <div class="contact__adress">
-                    <p>От ст. м. Левобережная: Автобус 48 — выходить на остановке Бювет</p>
-                </div>
+                <p class="contact__tel"><a href="tel:+380(67) 47 889 46"><br>Тел. +380 (67) 47 889 46</a></p>
             </div>
-        </div>
+            <div class="map-container">
+                {{> googleMap name="leftMap" options=leftMapOptions}}
+            </div>
+        </div>     
     </section>
-</template> 
+</template>

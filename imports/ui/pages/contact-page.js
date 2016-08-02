@@ -1,5 +1,7 @@
 import './contact-page.html';
 
+GoogleMaps.load({key: 'AIzaSyCxIribJbovuLIX6rojIYd02pAOOoNhdy4'});
+
 Template.contactPage.helpers({
   rightMapOptions: function() {
     // Make sure the maps API has loaded
@@ -7,6 +9,15 @@ Template.contactPage.helpers({
       // Map initialization options
       return {
         center: new google.maps.LatLng(50.417435, 30.457508),
+        zoomControl: true,
+        zoomControlOptions: {
+          position: google.maps.ControlPosition.LEFT_BOTTOM
+        },
+        scaleControl: true,
+        streetViewControl: true,
+        streetViewControlOptions: {
+          position: google.maps.ControlPosition.LEFT_BOTTOM
+        },
         zoom: 17
       };
     }
@@ -17,6 +28,15 @@ Template.contactPage.helpers({
       // Map initialization options
       return {
         center: new google.maps.LatLng(50.439343, 30.602430),
+        zoomControl: true,
+        zoomControlOptions: {
+          position: google.maps.ControlPosition.LEFT_BOTTOM
+        },
+        scaleControl: true,
+        streetViewControl: true,
+        streetViewControlOptions: {
+          position: google.maps.ControlPosition.LEFT_BOTTOM
+        },
         zoom: 17
       };
     }

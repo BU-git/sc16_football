@@ -1,17 +1,49 @@
-.map-container {
+.contact-container {
+	position: relative;
+	margin: 20px auto;
+}
+.map-container{
 	width: 100%;
-	height: 320px;
+	height: 550px;
+	max-height: 50vh;
 }
 .contact{
+	position: absolute;
+	width: 35%;
+	height: 100%;
+	padding: 120px 60px;
+	background-color: rgba($primary-color, 0.77);  
+	top: 0;
+	right: 0;
+	z-index: 2;
+	@include tablet{
+		position: relative;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		padding: 60px;
+	}
+	&__title {
+		font-size: 28px;
+		line-height: 34px;
+		color: #fff;
+		@include tablet{
+			font-size: 22px;
+		}
+	}
 	&__tel a{
 		text-decoration: none;
-		font-size: 20px; 
+		font-size: 22px;
+		color: #fff;
+		@include tablet{
+			font-size: 16px;
+		}
 	}
 	&__adress{
-		font-size: 16px;
-	}
-	&__map{
-		width: 100%;
-		display: block;
+		font-size: 24px;
+		color: #fff;
+		@include tablet{
+			font-size: 18px;
+		}
 	}
 }
