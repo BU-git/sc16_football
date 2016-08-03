@@ -44,11 +44,6 @@
             text-align: center;
         }
     }
-    &__stars{
-        @include mobile{
-            text-align: center;
-        }
-    }
 }
 
 .advantages {

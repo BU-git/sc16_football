@@ -1,6 +1,6 @@
 .footer{
     background-color: $primary-color;
-    padding: 85px 0 75px 0;
+    padding: 50px 0 50px 0;
     font-size: 15px;
     color: white;
     line-height: 1;
@@ -12,10 +12,11 @@
         padding: 30px 0 5px 0;
         font-size: 15px;
     }
-    .logo{
+    &__logo{
+        margin: 0 0 0 auto;
         display: block;
         width: 80px;
-        &__img{
+        img{
             display: block;
             width: 100%;
             padding: 0 0 15px 0;
@@ -27,5 +28,10 @@
         @include tablet{
             margin: 0 auto;
         }
+    }
+    &__copyright{
+        text-align: right;
+        color: #acacac;
+        font-size: 13px;
     }
 }
