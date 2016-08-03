@@ -22,7 +22,7 @@ Template.adminCalendarPage.onRendered(() => {
         },
         eventRender(event, element) {
             element.find('.fc-content').html(
-                '<p>' + event.time + ' (Длительность: ' + event.duration + ')</p>' +
+                '<p>' + event.time + '</p>' +
                 '<h4>' + event.title + '</h4>' +
                 // '<p class="guest-count">' + event.guests + '</p>' +
                 '<p>' + event.place + '</p>'
