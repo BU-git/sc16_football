@@ -1,6 +1,6 @@
 <template name="adminNewsPage">
 {{#if Template.subscriptionsReady}}
-    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target=".modal--add-news">Добавить новость</button>
+    <button id="js-open-modal" type="submit" class="btn btn-primary" data-toggle="modal" data-target=".modal--add-news">Добавить новость</button>
 
     <h3>Новости</h3>
     <div class="news__wrap">
@@ -10,6 +10,5 @@
     </div>
 
     {{> addNewsModal}}
-    {{> editNewsModal}}
 {{/if}}
 </template>

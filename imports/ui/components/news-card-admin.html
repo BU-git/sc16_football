@@ -1,7 +1,7 @@
 <template name="newsCardAdmin">
     <div class="news">
         <div class="news-controls">
-            <span class="news-controls__btn glyphicon glyphicon-pencil js-btn-edit-news"></span>
+            <span class="news-controls__btn glyphicon glyphicon-pencil js-btn-edit-news" data-toggle="modal" data-target=".modal--add-news"></span>
             <span class="news-controls__btn news-controls__btn--remove js-btn-remove-news glyphicon glyphicon-remove"></span>
         </div>
         <div class="news__image" style='background-image: url({{this.thumbnail}})'></div>

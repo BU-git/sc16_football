@@ -41,3 +41,5 @@ aldeed:simple-schema
 session
 check
 tsega:bootstrap3-datetimepicker
+raix:eventemitter
+

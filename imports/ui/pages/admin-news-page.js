@@ -1,7 +1,6 @@
 import './admin-news-page.html';
 import '../components/news-card-admin';
 import '../components/add-news-modal';
-import '../components/edit-news-modal';
 
 import { Template } from 'meteor/templating';
 import { News } from '../../api/news.js';
@@ -28,38 +27,6 @@ Template.adminNewsPage.helpers({
 
 
 Template.adminNewsPage.events({
-    'submit #js-add-news': function(e, template) {
-        e.preventDefault();
-        // get today date
-        var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth()+1; //January is 0!
-        var yyyy = today.getFullYear();
-        if(dd<10) {
-            dd='0'+dd
-        } 
-        if(mm<10) {
-            mm='0'+mm
-        }
-        today = dd+'/'+mm+'/'+yyyy;
-        dateStamp = new Date;
-
-        var titleVal = $('#js-news-title').val();
-        var descriptionVal = $('#js-news-desc').val();
-        var thumbnail = template.thumbnailUrl;
-
-        News.insert({
-            title: titleVal,
-            description: descriptionVal,
-            thumbnail: thumbnail,
-            date: today,
-            dateStamp: dateStamp
-        });
-
-        $('.modal--add-news').modal('hide');
-        sAlert.success('Новость успешно добавлена!')
-        template.find("#js-add-news").reset();
-    },
     'change #js-thumbnail-input': function (e, template) {
         if (e.currentTarget.files && e.currentTarget.files[0]) {
             // We upload only one file, in case 
@@ -90,10 +57,11 @@ Template.adminNewsPage.events({
         News.remove(this._id);
         sAlert.success('Новость удалена')
     },
-    'click .js-btn-edit-news': function(e, template){
-       $('.js-modal-edit-news').modal('show');
-    },
-    'submit #js-form-edit-news': function(e, template) {
-        $('.js-modal-edit-news').modal('hide')
+    // 'submit #js-form-edit-news': function(e, template) {
+    //     $('.js-modal-edit-news').modal('hide')
+    // },
+    'click #js-open-modal': function(e, template) {
+        Event.emit('openModal', {'addNews': true});
     }
+
 });

@@ -13,3 +13,5 @@ sAlert.config({
     beep: false,
     onClose: _.noop
 });
+
+Event = new EventEmitter();
