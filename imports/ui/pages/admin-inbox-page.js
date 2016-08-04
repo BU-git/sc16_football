@@ -28,6 +28,10 @@ Template.adminInboxPage.helpers({
                     label: "Имя ребенка"
                 },
                 {
+                    key: "age",
+                    label: "Возраст"
+                },
+                {
                     key: "phone",
                     label: "Телефон"
                 },
@@ -50,6 +54,12 @@ Template.adminInboxPage.helpers({
                         }
                         
                     }
+                },
+                {
+                    label: "",
+                    fn: function(value, object){
+                        return new Spacebars.SafeString('<span class="js-remove-enroll glyphicon glyphicon-trash"></span>');
+                    }
                 }
             ]
         };
@@ -59,11 +69,16 @@ Template.adminInboxPage.helpers({
 Template.adminInboxPage.events({
     'click #enrolls tr': function(e, template){
         if($(e.target).hasClass('js-respond')){
+            // mark as responded
             Enrolls.update({_id : this._id},{$set:{'status' : true}});
-            sAlert.success('Заявка обработана')
+            sAlert.success('Заявка обработана');
         } else if($(e.target).hasClass('js-responded')){
+            // mark as not responded
             Enrolls.update({_id : this._id},{$set:{'status' : false}});
-            sAlert.success('Заявка не обработана')
+            sAlert.success('Заявка не обработана');
+        } else if($(e.target).hasClass('js-remove-enroll')){
+            // remove enroll from collection
+            Enrolls.remove(this._id);
         }
-    },
+    }
 });
