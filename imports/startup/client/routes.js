@@ -151,6 +151,14 @@ FlowRouter.route('/admin/inbox', {
 FlowRouter.route('/admin/calendar', {
   name: 'adminCalendarPage',
   action() {
-    BlazeLayout.render('adminLayout', { main: 'adminCalendarPage', sidebar: 'sidebarAdmin' });
+    Tracker.autorun(function() {
+      if(!Meteor.loggingIn()) {
+        if(!adminUser(Meteor.userId())) {
+          FlowRouter.go('/login');
+        } else {
+          BlazeLayout.render('adminLayout', { main: 'adminCalendarPage', sidebar: 'sidebarAdmin' });
+        }
+      }
+    });
   },
 });

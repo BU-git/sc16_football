@@ -1,287 +1,67 @@
 <template name="teamPage">
     <div class="teamphoto" style="background-image: url('/slider/slider-1.JPG')"></div>
-        <section class="section container">
-            <div class="section__title">Тренера</div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row trainers">
-                        <div class="col-md-4">
-                            <div class="trainers__photo" style="background-image: url('/trainer.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="trainers__name">Коцепуд Максим</div>
-                            <div class="trainers__role">Тренер/тренер вратарей</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row trainers">
-                        <div class="col-md-4">
-                            <div class="trainers__photo" style="background-image: url('/trainer.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="trainers__name">Свидерок Антон</div>
-                            <div class="trainers__role">Тренер</div>
-                        </div>
-                    </div>
+    <section class="section container">
+        <div class="section__title">Тренера</div>
+        <div class="team">
+            <div class="team-card">
+                <div class="team-card__photo" style="background-image: url('/trainers/kocepud.jpg')"></div>
+                <div class="team-card__info">
+                    <p class="team-card__name">Коцепуд Максим</p>
+                    <p class="team-card__positon">Тренер / Тренер вратарей</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row trainers">
-                        <div class="col-md-4">
-                            <div class="trainers__photo" style="background-image: url('/trainer.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="trainers__name">Новиченко Валентин</div>
-                            <div class="trainers__role">Тренер</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row trainers">
-                        <div class="col-md-4">
-                            <div class="trainers__photo" style="background-image: url('/trainer.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="trainers__name">Бондарь Илья</div>
-                            <div class="trainers__role">Тренер</div>
-                        </div>
-                    </div>
+            <div class="team-card">
+                <div class="team-card__photo" style="background-image: url('/trainers/yacenko.jpg')"></div>
+                <div class="team-card__info">
+                    <p class="team-card__name">Свидерок Антон</p>
+                    <p class="team-card__positon">Тренер</p>
                 </div>
             </div>
-            <div class="section__title">Наши ребята</div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row members">
-                        <div class="col-md-5">
-                            <div class="members__photo" style="background-image: url('/member.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="members__name">Федчак Егор</div>
-                            <div class="members__date">Январь 2015</div>
-                            <div class="members__advantages">Сильные стороны:
-                            лидерство, отбор мяча, передачи, удар</div>
-                            <div class="members__quote">Капитан команды на поле и вне его</div>
-                        </div>
-                    </div>
-                    <div class="members__position">
-                        <p>Вратарь</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row members">
-                        <div class="col-md-5">
-                            <div class="members__photo" style="background-image: url('/member.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="members__name">Коваленко Миша</div>
-                            <div class="members__date">Сентябрь 2015</div>
-                            <div class="members__advantages">Сильные стороны:
-                            лидерство, отбор мяча, передачи, удар</div>
-                            <div class="members__quote">Капитан команды на поле и вне его</div>
-                        </div>
-                    </div>
-                    <div class="members__position">
-                        <p>Защитник</p>
-                    </div>
+            <div class="team-card">
+                <div class="team-card__photo" style="background-image: url('/trainers/kolyada.jpg')"></div>
+                <div class="team-card__info">
+                    <p class="team-card__name">Новиченко Валентин</p>
+                    <p class="team-card__positon">Тренер</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row members">
-                        <div class="col-md-5">
-                            <div class="members__photo" style="background-image: url('/member.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="members__name">Гаркуша Миша</div>
-                            <div class="members__date">Май 2015</div>
-                            <div class="members__advantages">Сильные стороны:
-                            лидерство, отбор мяча, передачи, удар</div>
-                            <div class="members__quote">Капитан команды на поле и вне его</div>
-                        </div>
-                    </div>
-                    <div class="members__position">
-                        <p>Защитник</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row members">
-                        <div class="col-md-5">
-                            <div class="members__photo" style="background-image: url('/member.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="members__name">Андриевский Толик</div>
-                            <div class="members__date">Май 2015</div>
-                            <div class="members__advantages">Сильные стороны:
-                            лидерство, отбор мяча, передачи, удар</div>
-                            <div class="members__quote">Капитан команды на поле и вне его</div>
-                        </div>
-                    </div>
-                    <div class="members__position">
-                        <p>Защитник</p>
-                    </div>
+            <div class="team-card">
+                <div class="team-card__photo" style="background-image: url('/trainers/kolyada.jpg')"></div>
+                <div class="team-card__info">
+                    <p class="team-card__name">Бондарь Илья</p>
+                    <p class="team-card__positon">Тренер</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row members">
-                        <div class="col-md-5">
-                            <div class="members__photo" style="background-image: url('/member.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="members__name">Деликатный Денис</div>
-                            <div class="members__date">Октябрь 2014</div>
-                            <div class="members__advantages">Сильные стороны:
-                            лидерство, отбор мяча, передачи, удар</div>
-                            <div class="members__quote">Капитан команды на поле и вне его</div>
-                        </div>
-                    </div>
-                    <div class="members__position">
-                        <p>Защитник</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row members">
-                        <div class="col-md-5">
-                            <div class="members__photo" style="background-image: url('/member.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="members__name">Гребенюк Платон</div>
-                            <div class="members__date">Май 2015</div>
-                            <div class="members__advantages">Сильные стороны:
-                            лидерство, отбор мяча, передачи, удар</div>
-                            <div class="members__quote">Капитан команды на поле и вне его</div>
-                        </div>
-                    </div>
-                    <div class="members__position">
-                        <p>Защитник</p>
-                    </div>
+        </div>
+        <div class="section__title">Наши ребята</div>
+        <div class="team">
+            <div class="team-card">
+                <div class="team-card__photo" style="background-image: url('/members/1.jpg')"></div>
+                <div class="team-card__info">
+                    <p class="team-card__name">Федчак Егор</p>
+                    <p class="team-card__positon">Тренер / Тренер вратарей</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row members">
-                        <div class="col-md-5">
-                            <div class="members__photo" style="background-image: url('/member.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="members__name">Фигель Владик</div>
-                            <div class="members__date">Сентябрь 2015</div>
-                            <div class="members__advantages">Сильные стороны:
-                            лидерство, отбор мяча, передачи, удар</div>
-                            <div class="members__quote">Капитан команды на поле и вне его</div>
-                        </div>
-                    </div>
-                    <div class="members__position">
-                        <p>Полузащитник</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row members">
-                        <div class="col-md-5">
-                            <div class="members__photo" style="background-image: url('/member.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="members__name">Дяденко Даня</div>
-                            <div class="members__date">Май 2015</div>
-                            <div class="members__advantages">Сильные стороны:
-                            лидерство, отбор мяча, передачи, удар</div>
-                            <div class="members__quote">Капитан команды на поле и вне его</div>
-                        </div>
-                    </div>
-                    <div class="members__position">
-                        <p>Полузащитник</p>
-                    </div>
+            <div class="team-card">
+                <div class="team-card__photo" style="background-image: url('/members/2.jpg')"></div>
+                <div class="team-card__info">
+                    <p class="team-card__name">Свидерок Антон</p>
+                    <p class="team-card__positon">Тренер</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row members">
-                        <div class="col-md-5">
-                            <div class="members__photo" style="background-image: url('/member.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="members__name">Куценко Егор</div>
-                            <div class="members__date">Август 2015</div>
-                            <div class="members__advantages">Сильные стороны:
-                            лидерство, отбор мяча, передачи, удар</div>
-                            <div class="members__quote">Капитан команды на поле и вне его</div>
-                        </div>
-                    </div>
-                    <div class="members__position">
-                        <p>Полузащитник</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row members">
-                        <div class="col-md-5">
-                            <div class="members__photo" style="background-image: url('/member.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="members__name">Гук Саша</div>
-                            <div class="members__date">Октябрь 2014</div>
-                            <div class="members__advantages">Сильные стороны:
-                            лидерство, отбор мяча, передачи, удар</div>
-                            <div class="members__quote">Капитан команды на поле и вне его</div>
-                        </div>
-                    </div>
-                    <div class="members__position">
-                        <p>Полузащитник</p>
-                    </div>
+            <div class="team-card">
+                <div class="team-card__photo" style="background-image: url('/members/3.jpg')"></div>
+                <div class="team-card__info">
+                    <p class="team-card__name">Новиченко Валентин</p>
+                    <p class="team-card__positon">Тренер</p>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row members">
-                        <div class="col-md-5">
-                            <div class="members__photo" style="background-image: url('/member.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="members__name">Мартыненко Матвей</div>
-                            <div class="members__date">Май 2015</div>
-                            <div class="members__advantages">Сильные стороны:
-                            лидерство, отбор мяча, передачи, удар</div>
-                            <div class="members__quote">Капитан команды на поле и вне его</div>
-                        </div>
-                    </div>
-                    <div class="members__position">
-                        <p>Нападающий</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row members">
-                        <div class="col-md-5">
-                            <div class="members__photo" style="background-image: url('/member.jpg')">
-                            </div>
-                        </div>
-                        <div class="col-md-7">
-                            <div class="members__name">Михайловский Коля</div>
-                            <div class="members__date">Май 2015</div>
-                            <div class="members__advantages">Сильные стороны:
-                            лидерство, отбор мяча, передачи, удар</div>
-                            <div class="members__quote">Капитан команды на поле и вне его</div>
-                        </div>
-                    </div>
-                    <div class="members__position">
-                        <p>Нападающий</p>
-                    </div>
+            <div class="team-card">
+                <div class="team-card__photo" style="background-image: url('/members/5.jpg')"></div>
+                <div class="team-card__info">
+                    <p class="team-card__name">Бондарь Илья</p>
+                    <p class="team-card__positon">Тренер</p>
                 </div>
             </div>
-        </section>        
+        </div>
+    </section>
 </template>
