@@ -1,7 +1,5 @@
 import './contact-page.html';
 
-GoogleMaps.load({key: 'AIzaSyBs3nANCHBkM4kPMEfGJnElcBU83rqoC9g'});
-
 Template.contactPage.helpers({
   rightMapOptions: function() {
     // Make sure the maps API has loaded

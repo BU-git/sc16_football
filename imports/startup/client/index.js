@@ -1,6 +1,6 @@
 import './routes.js';
 
-GoogleMaps.load();
+GoogleMaps.load({key: 'AIzaSyBs3nANCHBkM4kPMEfGJnElcBU83rqoC9g'});
 
 sAlert.config({
     effect: 'jelly',
