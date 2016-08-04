@@ -32,10 +32,9 @@
         }
         li{
             float: none;
+            flex: 1;
             font-weight: 300;
-            @include mobile{
-
-            }
+            text-align: center;
             &:hover{
                 a{
                     color: $primary-color;
@@ -56,10 +55,6 @@
 }
 .icon-bar{
     background: #fff;
-}
-
-.navbar--admin{
-
 }
 
 .sidebar-admin{

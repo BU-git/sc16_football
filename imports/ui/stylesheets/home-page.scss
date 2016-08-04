@@ -37,9 +37,32 @@
         }
     }
     &__text{
-        padding: 25px 0 0 0;
+        padding: 30px;
+        margin-top: 30px;
         font-size: 15px;
         text-align: justify;
+        background: $daknest;
+        position: relative;
+        &:before{
+            content: '"';
+            position: absolute;
+            font-size: 30px;
+            top: 9px;
+            left: 14px;
+            transform: rotate(19deg);
+        }
+        &:after{
+            content: '';
+            bottom: 100%;
+            position: absolute;
+            left: 30px;
+            width: 0;
+            height: 0;
+            border: 0 solid transparent;
+            border-right-width: 5px;
+            border-left-width: 29px;
+            border-bottom: 27px solid $daknest;
+        }
         @include tablet{
             text-align: center;
         }
