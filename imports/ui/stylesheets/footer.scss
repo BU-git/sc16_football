@@ -6,11 +6,11 @@
     color: white;
     line-height: 1;
     @include mobile{
-        padding: 30px 0 5px 0;
+        padding: 50px 0 5px 0;
         font-size: 13px;
     }
     @include tablet{
-        padding: 30px 0 5px 0;
+        padding: 50px 0 10px 0;
         font-size: 15px;
     }
     &__logo{
