@@ -1,6 +1,6 @@
 import './contact-page.html';
 
-GoogleMaps.load({key: 'AIzaSyCxIribJbovuLIX6rojIYd02pAOOoNhdy4'});
+GoogleMaps.load({key: 'AIzaSyBs3nANCHBkM4kPMEfGJnElcBU83rqoC9g'});
 
 Template.contactPage.helpers({
   rightMapOptions: function() {
