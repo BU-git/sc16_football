@@ -1,16 +1,33 @@
-.card{	
-
-	&__img {
-		margin: 20px auto;
-		height: 300px;
-		width: 100%;
-		background: #fff no-repeat 50% 50%;
-		background-size: cover;
-		@include tablet{
-			height: 200px;
-		}
-		@include mobile{
-			height: 200px;
-		}
-	}
+.element-item {
+    position: relative;
+    float: left;
+    width: 275px;
+    height: 275px;
+    margin: 5px;
+    padding: 10px;
+    background: #cccccc no-repeat 50% 50%;
+    background-size: cover;
+    @include tablet{
+        margin: 20px;
+        padding: 20px;
+        width: 320px;
+        height: 320px;
+    }
+    @include mobile{
+        width: 250px;
+        height: 250px;
+        margin: 15px 20px;
+        padding: 10px 15px;
+    }
+}
+.filter{
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+    @include tablet{
+        font-size: 20px;
+    }
+    @include mobile{
+        font-size: 15px;
+    }
 }

@@ -1,55 +1,55 @@
 <template name="galleryPage">
-	<section class="section container gallery">
-		<h3 class="section__title">ФОТОГАЛЕРЕЯ</h3>
-		<div class="row">
-			<a rel="gallery" href="/gallery/card_1.JPG" class="col-md-4 card">
-				<div class="card__img" style="background-image: url('/gallery/card_1.JPG')"></div>
-			</a>
-			<a rel="gallery" href="/gallery/card_2.JPG" class="col-md-4 card">
-				<div class="card__img" style="background-image: url('/gallery/card_2.JPG')"></div>
-			</a>
-			<a rel="gallery" href="/gallery/card_3.JPG" class="col-md-4 card">
-				<div class="card__img" style="background-image: url('/gallery/card_3.JPG')"></div>
-			</a>
-		</div>
-		<div class="row">
-			<a rel="gallery" href="/gallery/card_4.JPG" class="col-md-4 card">
-				<div class="card__img" style="background-image: url('/gallery/card_4.JPG')"></div>
-			</a>
-			<a rel="gallery" href="/gallery/card_5.JPG" class="col-md-4 card">
-				<div class="card__img" style="background-image: url('/gallery/card_5.JPG')"></div>
-			</a>
-			<a rel="gallery" href="/gallery/card_6.JPG" class="col-md-4 card">
-				<div class="card__img" style="background-image: url('/gallery/card_6.JPG')"></div>
-			</a>
-		</div>
-		<div class="row">
-			<a rel="gallery" href="/gallery/card_7.JPG" class="col-md-4 card">
-				<div class="card__img" style="background-image: url('/gallery/card_7.JPG')"></div>
-			</a>
-			<a rel="gallery" href="/gallery/card_8.JPG" class="col-md-4 card">
-				<div class="card__img" style="background-image: url('/gallery/card_8.JPG')"></div>
-			</a>
-			<a rel="gallery" href="/gallery/card_9.JPG" class="col-md-4 card">
-				<div class="card__img" style="background-image: url('/gallery/card_9.JPG')"></div>
-			</a>
-		</div>
-		<h3 class="section__title">Наши поля и залы:</h3>
-		<div class="row">
-			<a rel="gallery" href="/gallery/location_1.JPG" class="col-md-6 card">
-				<div class="card__img" style="background-image: url('/gallery/location_1.JPG')"></div>
-			</a>
-			<a rel="gallery" href="/gallery/location_2.JPG" class="col-md-6 card">
-				<div class="card__img" style="background-image: url('/gallery/location_2.JPG')"></div>
-			</a>
-		</div>
-		<div class="row">
-			<a rel="gallery" href="/gallery/location_3.JPG" class="col-md-6 card">
-				<div class="card__img" style="background-image: url('/gallery/location_3.JPG')"></div>
-			</a>
-			<a rel="gallery" href="/gallery/location_4.JPG" class="col-md-6 card">
-				<div class="card__img" style="background-image: url('/gallery/location_4.JPG')"></div>
-			</a>
-		</div>
-	</section>
+    <section class="section container gallery">
+        <h3 class="section__title">Фотогалерея</h3>
+        <div class="filter filters-link-group">
+            <a href="#" data-filter="*" class="is-checked">Все</a>
+            <a href="#" data-filter=".training">Наши тренировки</a>
+            <a href="#" data-filter=".location">Наши поля и залы</a>
+            <a href="#" data-filter=".event">Наши мероприятия</a>
+        </div>
+        <div class="grid">
+            <div class="element-item location" data-category="location" style="background-image: url(/gallery/location_1.JPG)">
+
+            </div>
+            <div class="element-item event" data-category="event" style="background-image: url(/gallery/event_1.jpg)">
+
+            </div>
+            <div class="element-item location" data-category="location" style="background-image: url(/gallery/location_2.JPG)">
+
+            </div>
+            <div class="element-item location" data-category="location" style="background-image: url(/gallery/location_4.JPG)">
+
+            </div>
+            <div class="element-item training" data-category="training" style="background-image: url(/gallery/training_1.JPG)">
+
+            </div>
+            <div class="element-item location" data-category="location" style="background-image: url(/gallery/location_3.JPG)">
+
+            </div>
+            <div class="element-item training" data-category="training" style="background-image: url(/gallery/training_2.JPG)">
+
+            </div>
+            <div class="element-item training" data-category="training" style="background-image: url(/gallery/training_3.JPG)">
+
+            </div>
+            <div class="element-item training" data-category="training" style="background-image: url(/gallery/training_4.JPG)">
+
+            </div>
+            <div class="element-item event" data-category="event" style="background-image: url(/gallery/event_2.jpg)">
+
+            </div>
+            <div class="element-item training" data-category="training" style="background-image: url(/gallery/training_5.JPG)">
+
+            </div>
+            <div class="element-item training" data-category="training" style="background-image: url(/gallery/training_6.JPG)">
+
+            </div>
+            <div class="element-item training" data-category="training" style="background-image: url(/gallery/training_7.JPG)">
+
+            </div>
+            <div class="element-item training" data-category="training" style="background-image: url(/gallery/training_8.JPG)">
+
+            </div>
+        </div>
+    </section>
 </template>
