@@ -1,20 +1,26 @@
 .footer{
+    position: relative;
     background-color: $primary-color;
     padding: 50px 0 50px 0;
     margin-top: 60px;
     font-size: 15px;
     color: white;
     line-height: 1;
-    @include mobile{
-        padding: 50px 0 5px 0;
-        font-size: 13px;
-    }
     @include tablet{
+        text-align: center;
         padding: 50px 0 10px 0;
         font-size: 15px;
     }
+    @include mobile{
+        font-size: 13px;
+    }
+    .contact-info{
+        @include mobile{
+        margin-bottom: 20px;
+        }
+    }
     &__logo{
-        margin: 0 0 0 auto;
+        margin: 0 auto;
         display: block;
         width: 80px;
         img{
@@ -24,23 +30,32 @@
         }
         @include mobile{
             width: 50px;
-            margin: 0 auto;
+            margin: 15px auto 0;
         }
         @include tablet{
-            margin: 0 auto;
+            margin: 15px auto 0;
         }
     }
     &__copyright{
         text-align: right;
         color: #acacac;
         font-size: 13px;
+         @include tablet{
+            text-align: center;
+         }
+         @include tablet{
+            font-size: 10px;
+            text-align: center;
+         }
+
     }
      &:before {
         content: '';
         display: block;
         height: 60px;
-        position: relative;
-        top: -110px;
+        width: 100%;
+        position: absolute;
+        top: -60px;
         left: 0;
         background: url("../ornament.png") repeat-x;
      }
