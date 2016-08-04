@@ -1,12 +1,12 @@
 <template name="sidebarAdmin">
-    <input type="checkbox" id="hmt" class="nav-trigger">
+<!--     <input type="checkbox" id="hmt" class="nav-trigger">
     <label class="btn-menu" for="hmt">
       <span class="first"></span>
       <span class="second"></span>
       <span class="third"></span>
     </label>
-    <div class="colored"></div>
-    <ul class="hidden-menu nav nav-pills nav-stacked sidebar-admin">
+    <div class="colored"></div> -->
+    <ul class="nav nav-pills nav-stacked">
         <li role="presentation" class="{{isActivePath '/admin'}}">
             <a href="/admin">Главная</a>
         </li>
@@ -16,16 +16,15 @@
         <li role="presentation"  class="{{isActivePath '/admin/news'}}">
             <a href="/admin/news">Новости</a>
         </li> 
-        <li role="presentation"  class="{{isActivePath '/admin/news'}}">
-            <hr class="divider">
-        </li> 
-        <li>
-            <a href="/" class="button-tosite">Перейти на сайт</a>
+        <li role="presentation" class="{{isActivePath '/admin/calendar'}}">
+            <a href="/admin/calendar">Календарь</a>
         </li>
-        {{#if isInRole 'admin'}}
+        <li class="divider"></li>
         <li>
-            <a href="" id="logout" class="button-exit">Выйти</a>
+            <a href="/">Перейти на сайт</a>
         </li>
-        {{/if}}
+        <li>
+            <a href="#" id="logout">Выйти</a>
+        </li>
     </ul>
 </template>
