@@ -1,6 +1,7 @@
 .gallery{
     // @include clearfix;
     &__item {
+        display: block;
         position: relative;
         // float: left;
         width: 275px;
