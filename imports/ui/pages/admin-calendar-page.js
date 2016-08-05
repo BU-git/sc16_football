@@ -24,8 +24,7 @@ Template.adminCalendarPage.onRendered(() => {
             element.find('.fc-content').html(
                 '<p>' + event.time + '</p>' +
                 '<h4>' + event.title + '</h4>' +
-                // '<p class="guest-count">' + event.guests + '</p>' +
-                '<p>' + event.place + '</p>'
+                '<p><span class="glyphicon glyphicon-map-marker"></span> ' + event.place + '</p>'
             );
         },
         dayClick(date) {

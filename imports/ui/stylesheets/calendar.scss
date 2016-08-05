@@ -11,6 +11,10 @@
         background-color: $primary-color;
         border-radius: 0;
         border: 0;
+        h4{
+            word-wrap: break-word;
+            white-space: normal;
+        }
     }
     .fc-day-grid-event{
         margin: 5px;
@@ -63,46 +67,9 @@
         font-size: 25px;
         font-weight: 400;
     }
-//     .fc-left {
-//        color: $primary-color;
-//    }
-//    .fc-today-button{
-//         color: $primary-color;
-//     }
-//    .fc-state-default{
-//     color: $primary-color;
-//     background: transparent;
-//     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
-//         &:hover {
-//             background-color: $primary-color;
-//             border-radius: 5px;
-//             color:#fff;
-//             text-shadow: 0;
-//             .fc-icon:after {
-//                 color: #fff;
-//                 box-shadow: 0;
-//             }
-//         }
-//         &:active {
-//             border: 1px solid transparent;
-//         }
-//         &:focus {
-//             border: 1px solid transparent;
-//         }
-//     }
-//     &.fc th{
-//         background: $primary-color;
-//         font-size: 18px;
-//         padding: 10px;
-//         color: #fff;
-//         font-weight: 500;
-//     }
-        .fc-basic-view td.fc-day-number {
-            color: $primary-color;
-            padding-top: 5px;
-            padding-right: 5px;
-        }
-//     .fc-today {
-//     background: $second-color;
-//     }
+    .fc-basic-view td.fc-day-number {
+        color: $primary-color;
+        padding-top: 5px;
+        padding-right: 5px;
+    }
 }
