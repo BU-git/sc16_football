@@ -39,6 +39,12 @@
     &__stars{
         color: #FAD70C;
         padding: 10px 0;
+        @include tablet{
+            text-align: center;
+        }
+        @include mobile{
+            text-align: center;
+        }
     }
     &__text{
         padding: 30px;
