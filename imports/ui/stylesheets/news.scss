@@ -5,6 +5,7 @@
     background: $dark;
     flex: 0 0 32%;
     margin: 1% 0;
+    overflow: hidden;
     &:nth-child(3n - 1) {
         margin-left: 2%;
         margin-right: 2%;
@@ -70,5 +71,7 @@
     }
     &__description{
         text-align: justify;
+        white-space: normal;
+        word-wrap: break-word;
     }
 }

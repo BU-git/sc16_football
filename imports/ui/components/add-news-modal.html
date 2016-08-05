@@ -18,7 +18,8 @@
                     <!-- title -->
                     <div class="form-group">
                         <label for="js-news-title">Заголовок</label>
-                        <input type="text" class="form-control" id="js-news-title" placeholder="Введите название новости" required value="{{title}}">
+                        <input type="text" class="form-control" id="js-news-title" placeholder="Введите название новости" maxlength="60" required value="{{title}}">
+                        <p class="help-block">Максимум 60 символов</p>
                     </div>
                     <!-- description -->
                     <div class="form-group">
