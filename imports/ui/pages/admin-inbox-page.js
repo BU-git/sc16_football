@@ -72,6 +72,7 @@ Template.adminInboxPage.helpers({
 
 Template.adminInboxPage.events({
     'click #enrolls tr': function(e, template){
+        var id = this._id;
         if($(e.target).hasClass('js-respond')){
             // mark as responded
             Enrolls.update({_id : this._id},{$set:{'status' : true}});
@@ -81,8 +82,12 @@ Template.adminInboxPage.events({
             Enrolls.update({_id : this._id},{$set:{'status' : false}});
             sAlert.success('Заявка не обработана');
         } else if($(e.target).hasClass('js-remove-enroll')){
-            // remove enroll from collection
-            Enrolls.remove(this._id);
+            $(e.target).confirmation({
+                onConfirm: function(e, template){
+                    Enrolls.remove(id);
+                },
+                placement: 'left'
+            });
         }
     }
 });
