@@ -20,6 +20,10 @@ Template.adminInboxPage.helpers({
             showFilter: false,
             fields: [
                 {
+                    key: "dateStamp",
+                    label: "Время"
+                },
+                {
                     key: "parent",
                     label: "Имя родителя"
                 },

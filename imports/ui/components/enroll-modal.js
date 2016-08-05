@@ -18,6 +18,27 @@ Template.enrollModal.events({
         var emailVal = $('#js-enroll-email').val().trim();
         var schoolVal = $( "#js-enroll-school option:selected" ).text();
 
+        var now     = new Date(); 
+        var year    = now.getFullYear();
+        var month   = now.getMonth()+1; 
+        var day     = now.getDate();
+        var hour    = now.getHours();
+        var minute  = now.getMinutes();
+
+        if(month.toString().length == 1) {
+            var month = '0'+month;
+        }
+        if(day.toString().length == 1) {
+            var day = '0'+day;
+        }   
+        if(hour.toString().length == 1) {
+            var hour = '0'+hour;
+        }
+        if(minute.toString().length == 1) {
+            var minute = '0'+minute;
+        }
+        var dateStamp = day+'/'+month+'/'+year+' '+hour+':'+minute;
+
         Enrolls.insert({
             parent: parentVal,
             child: childVal,
@@ -25,7 +46,8 @@ Template.enrollModal.events({
             phone: phoneVal,
             email: emailVal,
             school: schoolVal,
-            status: false
+            status: false,
+            dateStamp: dateStamp
         });
 
         template.find("#js-enroll").reset();

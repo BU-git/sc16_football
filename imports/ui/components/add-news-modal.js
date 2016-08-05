@@ -42,7 +42,7 @@ Template.addNewsModal.events({
             mm='0'+mm
         }
         today = dd+'/'+mm+'/'+yyyy;
-        dateStamp = new Date;
+        var dateStamp = new Date;
 
         var titleVal = $('#js-news-title').val();
         var descriptionVal = $('#js-news-desc').val();
