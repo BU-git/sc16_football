@@ -5,6 +5,53 @@ import { Enrolls } from '../../api/enrolls.js';
 
 Template.enrollModal.onCreated(function(){
     this.subscribe('enrolls');
+
+});
+
+Template.enrollModal.onRendered(function(){
+    $( "#js-enroll" ).validate({
+        rules: {
+            parent: {
+                required: true
+            },
+            child: {
+                required: true
+            },
+            age: {
+                required: true,
+                range: [1, 18]
+            },
+            telephone: {
+                required: true
+            },
+            email: {
+                required: true
+            }
+        },
+        messages: {
+            parent: {
+                required: "Введите Ваше имя",
+                pattern: "Только буквы"
+            },
+            child: {
+                required: "Введите имя ребенка",
+                pattern: "Только буквы"
+            },
+            age: {
+                required: "Введите возраст ребенка",
+                range: "Введите число от 1 до 18",
+                pattern: "Только числа от 1 до 18"
+            },
+            telephone: {
+                required: "Введите номер телефона",
+                pattern: "Введите номер телефона в формате (099)9999999"
+            },
+            email: {
+                required: "Введите Вашу электронную почту",
+                pattern: "Введите электронный адрес в формате name@sitename.com"
+            }
+        }
+    });
 });
 
 Template.enrollModal.events({
