@@ -64,6 +64,14 @@ Template.homePage.onRendered(function() {
                 '<h4>' + event.title + '</h4>' +
                 '<p><span class="glyphicon glyphicon-map-marker"></span> ' + event.place + '</p>'
             );
+        },
+        dayRender: function(date, cell) {
+            if (cell.hasClass('fc-today')) {
+                var index = cell.index(); // get the td offset
+                // find the corresponding item in header table
+                var header = $('#js-week-calendar thead.fc-head th').eq(index);
+                header.addClass('fc-today'); // update it with a class
+            }
         }
     });
 
