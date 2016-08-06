@@ -22,7 +22,7 @@ Template.adminCalendarPage.onRendered(() => {
         },
         eventRender(event, element) {
             element.find('.fc-content').html(
-                '<p>' + event.time + '</p>' +
+                '<p><span class="glyphicon glyphicon-time"></span> ' + event.time + '</p>' +
                 '<h4>' + event.title + '</h4>' +
                 '<p><span class="glyphicon glyphicon-map-marker"></span> ' + event.place + '</p>'
             );
