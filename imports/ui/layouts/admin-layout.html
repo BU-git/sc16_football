@@ -1,14 +1,11 @@
 <template name="adminLayout">
     {{> sAlert}}
     {{> headerAdmin}}
-    <div class="col-md-3">
-        {{> Template.dynamic template=sidebar}}
-    </div>
-<!--         <section class="site-wrap"> -->
-    <div class="col-md-9">
-        {{> Template.dynamic template=main}}
-    </div>
-        <!-- </section> -->
+    <main class="admin-main">
+        <div class="container-fluid">
+            {{> Template.dynamic template=main}}
+        </div>
+    </main>
     {{> Template.dynamic template=footer}}
     {{> addNewsModal}}
 </template>

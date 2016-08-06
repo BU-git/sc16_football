@@ -1,4 +1,37 @@
 <template name="headerAdmin">
-    <nav class="navbar navbar-admin">
-    </nav>
+<nav class="navbar navbar-default navbar-admin">
+<div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="admin-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">UFS</a>
+    </div>
+
+    {{#if isInRole 'admin'}}
+    <div class="collapse navbar-collapse" id="admin-collapse">
+        <ul class="nav navbar-nav navbar-right">
+            <li class="{{isActivePath '/admin'}}">
+                <a href="/admin"><span class="glyphicon glyphicon-home"></span></a>
+            </li>
+            <li class="{{isActivePath '/admin/inbox'}}">
+                <a href="/admin/inbox"><span class="glyphicon glyphicon-envelope"></span> {{#if unreadCount}}<span class="badge">{{unreadCount}}</span>{{/if}}</a>
+            </li>
+            <li  class="{{isActivePath '/admin/news'}}">
+                <a href="/admin/news"><span class="glyphicon glyphicon-edit"></span></a>
+            </li> 
+            <li class="{{isActivePath '/admin/calendar'}}">
+                <a href="/admin/calendar"><span class="glyphicon glyphicon-calendar"></span></a>
+            </li>
+            <li>
+                <a href="#" id="logout">Выйти</a>
+            </li>
+        </ul>
+    </div>
+    {{/if}}
+</div>
+</nav>
 </template>
