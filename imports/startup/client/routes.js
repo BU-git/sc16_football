@@ -25,6 +25,8 @@ import '../../ui/pages/news-page.js';
 import '../../ui/pages/calendar-page.js';
 import '../../ui/pages/add-event.js';
 
+import '../../ui/pages/not-found.js';
+
 import adminUser from '../../modules/admin-user';
 
 FlowRouter.route('/about', {
@@ -78,7 +80,7 @@ FlowRouter.route('/calendar', {
 
 FlowRouter.notFound = {
   action() {
-    BlazeLayout.render('mainLayout', { main: 'notFound' });
+    BlazeLayout.render('mainLayout', { main: 'notFound', header: 'header'});
   },
 };
 
