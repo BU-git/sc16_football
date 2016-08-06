@@ -39,9 +39,9 @@
 
         flex-direction: row;
 
-        -webkit-box-align: start;
-        -ms-flex-align: start;
-        align-items: flex-start;
+        -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
 
         justify-content: flex-start;
         -ms-flex-wrap: wrap;
@@ -60,17 +60,18 @@
     &__title{
         color: $primary-color;
         font-size: 19px;
+        height: 40px;
     }
     &__date{
         color: #acacac;
         font-size: 12px;
         padding: 0;
+        padding-bottom: 6px;
         margin: 0;
         text-align: right;
         letter-spacing: 2px;
     }
     &__description{
-        text-align: justify;
         white-space: normal;
         word-wrap: break-word;
     }
