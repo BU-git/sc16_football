@@ -15,8 +15,8 @@ Template.addEditEventModal.helpers({
 
         if (eventModal) {
             return {
-                button: eventModal.type === 'edit' ? 'Edit' : 'Add',
-                label: eventModal.type === 'edit' ? 'Edit' : 'Add an'
+                button: eventModal.type === 'edit' ? 'Редактировать' : 'Добавить',
+                label: eventModal.type === 'edit' ? 'Редактировать' : 'Добавить'
             };
         }
     },
@@ -28,7 +28,7 @@ Template.addEditEventModal.helpers({
 
         if (eventModal) {
             return eventModal.type === 'edit' ? Events.findOne(eventModal.event) : {
-                start: eventModal.date,
+                start: eventModal.date
                 // end: eventModal.date
             };
         }
@@ -85,7 +85,7 @@ Template.addEditEventModal.events({
     },
     'click .delete-event' (event, template) {
         let eventModal = Session.get('eventModal');
-        if (confirm('Are you sure? This is permanent.')) {
+        if (confirm('Вы уверенны? Действие нельзя отменить.')) {
             Meteor.call('removeEvent', eventModal.event, (error) => {
                 if (error) {
                     sAlert.success(error.reason);
