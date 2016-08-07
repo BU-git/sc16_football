@@ -24,10 +24,6 @@ let EventsSchema = new SimpleSchema({
         type: String,
         label: 'When this event will start.'
     },
-    'end': {
-        type: String,
-        label: 'When this event will end.'
-    },
     'place': {
         type: String,
         label: 'What type of event is this?',

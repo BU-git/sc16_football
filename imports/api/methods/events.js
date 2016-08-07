@@ -9,7 +9,7 @@ Meteor.methods({
             _id: String,
             title: Match.Optional( String ),
             start: String,
-            end: String,
+            // end: String,
             place: Match.Optional( String ),
             time: String,
             duration: String
@@ -27,7 +27,7 @@ Meteor.methods({
         check( event, {
             title: String,
             start: String,
-            end: String,
+            // end: String,
             place: String,
             time: String,
             duration: String

@@ -21,9 +21,9 @@ Template.calendarPage.onRendered(() => {
         },
         eventRender(event, element) {
             element.find('.fc-content').html(
-                '<p><span class="glyphicon glyphicon-time"></span> ' + event.time + '</p>' +
-                '<h4>' + event.title + '</h4>' +
-                '<p><span class="glyphicon glyphicon-map-marker"></span> ' + event.place + '</p>'
+                '<div class="event__header"><div class="event__time"><span class="glyphicon glyphicon-time"></span> ' +
+                event.time + '</div><div class="event__place"><span class="glyphicon glyphicon-map-marker"></span> ' +
+                event.place + '</div></div><h4 class="event__title">' + event.title + '</h4>'
             );
         }
     });

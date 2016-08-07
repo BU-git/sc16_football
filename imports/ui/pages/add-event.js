@@ -29,7 +29,7 @@ Template.addEditEventModal.helpers({
         if (eventModal) {
             return eventModal.type === 'edit' ? Events.findOne(eventModal.event) : {
                 start: eventModal.date,
-                end: eventModal.date
+                // end: eventModal.date
             };
         }
     }
@@ -63,7 +63,7 @@ Template.addEditEventModal.events({
             eventItem = {
                 title: template.find('[name="title"]').value,
                 start: template.find('[name="start"]').value,
-                end: template.find('[name="end"]').value,
+                // end: template.find('[name="end"]').value,
                 place: template.find('[name="place"] option:selected').value,
                 time: template.find('input.time').value,
                 duration: template.find('input.duration').value

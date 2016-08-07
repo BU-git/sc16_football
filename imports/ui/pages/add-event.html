@@ -4,7 +4,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="add-edit-event">{{modalLabel.label}} событие на {{event.start}}</h4>
+                <h4 class="modal-title" id="add-edit-event">{{modalLabel.label}} событие</h4>
             </div>
             <form id="add-edit-event-form">
                 <div class="modal-body">
@@ -16,6 +16,10 @@
                                     <option selected="{{selected event.type 'Русановка' }}" value="Русановка">Русановка</option>
                                     <option selected="{{selected event.type 'Соломенка' }}" value="Соломенка">Соломенка</option>
                                 </select>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <label for="start">Дата</label>
+                                <input type="text" name="start" class="form-control" value="{{event.start}}" required>
                             </div>
                         </div>
                     </div>

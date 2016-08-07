@@ -39,6 +39,7 @@
         margin: 5px;
         padding: 10px;
         margin-top: 13px;
+        min-height: 65px;
     }
     // btn
     .fc-state-default{
@@ -91,5 +92,20 @@
         color: $primary-color;
         padding-top: 5px;
         padding-right: 5px;
+    }
+}
+
+.event{
+    &__header{
+        @include clearfix;
+    }
+    &__time{
+        float: left;
+    }
+    &__place{
+        float: right;
+    }
+    &__title{
+        font-size: 14px;
     }
 }
