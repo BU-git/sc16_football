@@ -30,6 +30,9 @@
         -moz-osx-font-smoothing: grayscale;
         position: relative;
         overflow: hidden;
+        &:hover{
+            color: #FFF;
+        }
         &:before{
             content: "";
             position: absolute;
