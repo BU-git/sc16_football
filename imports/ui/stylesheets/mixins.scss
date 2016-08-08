@@ -8,13 +8,11 @@ $tablet: 768px;
     }
 }
 
-@mixin tablet {
+@mixin tablet{
   @media (max-width: #{$desktop - 1px}) {
     @content;
   }
 }
-
-
 // clear
 @mixin clearfix {
   &:after {

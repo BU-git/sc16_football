@@ -1,28 +1,148 @@
 .header{
-    padding: 15px 0 15px 0;
+    padding: 25px 0 25px 0;
     background: #fff;
     @include mobile{
         padding: 10px 0 10px 0;
     }
-    &__contact{
-        color: white;
-        font-size: 26px;
+    &__info{
+        position: relative;
+        color: $primary-color;
+        font-size: 18px;
+        font-weight: 500;
+        text-align: left;
         line-height: 1;
-        padding: 7px 0 0 0;
-    }   
+        @include mobile {
+            font-size: 12px;
+        }
+        &--text{
+            margin-bottom: 20px;
+            margin-left: 30px;
+            @include mobile {
+                margin-top: 12px;
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+            @include tablet {
+                margin-bottom: 10px;
+                margin-left: 10px;
+            }
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 0;
+                left: -15px;
+                width: 33px;
+                height: 33px;
+                background-image: url('/icons/h-ball.png');
+                @include mobile {
+                    display: none;
+                }
+                @include tablet {
+                    display: none;
+                }
+            }
+        }
+        &--tel{
+            margin-left: 30px;
+            @include mobile {
+                margin-left: 10px;
+            }
+            @include tablet {
+                margin-left: 10px;
+            }
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 49px;
+                left: -7px;
+                width: 21px;
+                height: 36px;
+                background-image: url('/icons/h-tel.png');
+                @include mobile {
+                    display: none;
+                }
+                @include tablet {
+                    display: none;
+                }
+            }
+            &:hover{
+                a {
+                    color: $second-color;
+                }
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 49px;
+                    left: -7px;
+                    width: 21px;
+                    height: 36px;
+                    background-image: url('/icons/h-tel-hover.png');
+                    @include mobile {
+                        display: none;
+                    }
+                    @include tablet {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
     .logo{
         display: block;
-        width: 100px;
         margin: 0 auto;
         &__img{
             display: block;
             width: 100px;
         }
-        @include mobile{
-            width: 70px;
+        @include tablet {
+            width: 100px;
+            float: none;
+        }
+        @include mobile {
+            float: right;
         }
     }
+    &__socials{
+        margin-top: 20px;
+        &-icon{
+            display: inline-block;
+            float: left;
+            width: 38px;
+            height: 38px;
+            margin-right: 10px;
+            background: transparent no-repeat 50% 50%;
+            background-size: contain;
+            &:last-child {
+                margin-right: 25px; 
+            }
+            @include mobile{
+                display: none;
+            }
+            @include tablet{
+                display: none;
+            }
+            &--fb{
+                background-image: url('/icons/h-fb.png')
+            }
+            &--vk{
+                background-image: url('/icons/h-vk.png')
+            }
+            &--insta{
+                background-image: url('/icons/h-insta.png')
+            }
+        }
+    }
+    .buttons-enroll {
+         @include tablet {
+            margin: 0 40px;
+         }
+    }
 }
+
+
 .menu{
     @include mobile{
         width: 100%;
