@@ -76,36 +76,3 @@
         word-wrap: break-word;
     }
 }
-.buttons{
-    &--load-more{
-        display: inline-block;
-        vertical-align: middle;
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-        -moz-osx-font-smoothing: grayscale;
-        position: relative;
-        padding-right: 2.2em;
-        background: white;
-        color: black;
-        &:before{
-            content: "\f110";
-            position: absolute;
-            right: 1em;
-            padding: 0;
-            font-family: FontAwesome;
-            -webkit-transition-duration: 1s;
-            transition-duration: 1s;
-            -webkit-transition-property: transform;
-            transition-property: transform;
-            -webkit-transition-timing-function: ease-in-out;
-            transition-timing-function: ease-in-out;
-        }
-        &:hover:before, &:focus:before, &:active:before{
-            -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-        }
-    }
-}

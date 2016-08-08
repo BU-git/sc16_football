@@ -33,22 +33,3 @@
     }
 }
 
-.btn{
-    background: $primary-color;
-    border: none;
-    border-radius: 0;
-    text-transform: uppercase;
-    font-weight: 400;
-    font-size: 14px;
-    color: #fff;
-    outline: none;
-    &--primary{
-        background: #FAD70C;
-        color: #000;
-    }
-    &--load-more{
-        display: block;
-        max-width: 150px;
-        margin: 0 auto;
-    }
-}

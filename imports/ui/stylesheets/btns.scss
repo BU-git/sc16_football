@@ -1,0 +1,158 @@
+.btn{
+    background: $primary-color;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    outline: none;
+    &--primary{
+        background: $primary-color;
+        color: #000;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        overflow: hidden;
+        &:before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            background: $second-color;
+            height: 4px;
+            -webkit-transition-property: left, right;
+            transition-property: left, right;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out; 
+        }
+        &:focus:before, &:hover:before, &:active:before{
+            left: 0;
+            right: 0;
+        }
+    }
+    &--secondary{
+        background: $second-color;
+        color: #000;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -moz-osx-font-smoothing: grayscale;
+        position: relative;
+        overflow: hidden;
+        &:before{
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            background: $primary-color;
+            height: 4px;
+            -webkit-transition-property: left, right;
+            transition-property: left, right;
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out; 
+        }
+        &:focus:before, &:hover:before, &:active:before{
+            left: 0;
+            right: 0;
+        }
+    }
+    &--link{
+        display: block;
+        max-width: 180px;
+        margin: 0 auto;
+        position: relative;
+        &--load-more{
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            padding-right: 2.2em;
+            background: white;
+            padding-top: 20px;
+            color: $primary-color;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            &:hover{
+                text-decoration: none;
+                color: $primary-color;
+            }
+            &:before{
+                content: "\f110";
+                position: absolute;
+                right: 1em;
+                padding: 0;
+                font-family: FontAwesome;
+                -webkit-transition-duration: 1s;
+                transition-duration: 1s;
+                -webkit-transition-property: transform;
+                transition-property: transform;
+                -webkit-transition-timing-function: ease-in-out;
+                transition-timing-function: ease-in-out;
+            }
+            &:hover:before, &:focus:before, &:active:before{
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+        &-news{
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            padding-right: 2.2em;
+            padding-top: 20px;
+            -webkit-transition-duration: 0.1s;
+            transition-duration: 0.1s;
+            background: white;
+            color: $primary-color;
+            font-size: 20px;
+            font-weight: 400;
+            text-transform: uppercase;
+            &:hover{
+                text-decoration: none;
+                color: $primary-color;
+            }
+            &:before{
+                content: "\f061";
+                position: absolute;
+                right: 1em;
+                padding: 0;
+                top: 19px;
+                font-family: FontAwesome;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                -webkit-transition-duration: 0.1s;
+                transition-duration: 0.1s;
+                -webkit-transition-property: transform;
+                transition-property: transform;
+                -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+            }
+            &:hover:before, &:focus:before, &:active:before{
+                -webkit-transform: translateX(4px);
+                transform: translateX(4px);
+            }
+        }
+    }
+}
+

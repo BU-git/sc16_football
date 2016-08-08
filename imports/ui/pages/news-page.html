@@ -8,9 +8,7 @@
     </div>
     {{#if Template.subscriptionsReady}}
         {{#if hasMoreNews}}
-            <div class="buttons text-center">
-                <a id="js-load-more-news" href="#"><button type="button" class="btn btn--link buttons--load-more">Загрузить ещё</button></a>
-            </div>
+            <a id="js-load-more-news" href="#" class="btn btn--link btn--link--load-more">Загрузить ещё</a>
         {{/if}}
     {{else}}
         <div class="loading">{{>spinner}}</div>
