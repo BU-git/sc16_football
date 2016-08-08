@@ -95,6 +95,7 @@
         &__img{
             display: block;
             width: 100px;
+            margin: 0 auto;
             @include mobile {
                 width: auto;
                 height: 48px;
