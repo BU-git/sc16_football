@@ -4,12 +4,24 @@
     border-radius: 0;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 19px;
     color: #fff;
     outline: none;
+    font-size: 15px;
+    @include tablet{
+        font-size: 11px;
+    }
+    @include mobile{
+        font-size: 10px;
+    }
+    &:active{
+        background-image: none;
+        outline: 0;
+        box-shadow: none;
+    }
     &--primary{
         background: $primary-color;
-        color: #000;
+        color: #FFF;
         -webkit-transform: translateZ(0);
         transform: translateZ(0);
         box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -29,8 +41,8 @@
             height: 4px;
             -webkit-transition-property: left, right;
             transition-property: left, right;
-            -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
             -webkit-transition-timing-function: ease-out;
             transition-timing-function: ease-out; 
         }
@@ -61,8 +73,8 @@
             height: 4px;
             -webkit-transition-property: left, right;
             transition-property: left, right;
-            -webkit-transition-duration: 0.3s;
-            transition-duration: 0.3s;
+            -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
             -webkit-transition-timing-function: ease-out;
             transition-timing-function: ease-out; 
         }
@@ -76,6 +88,7 @@
         max-width: 180px;
         margin: 0 auto;
         position: relative;
+        font-size: 15px;
         &--load-more{
             -webkit-transform: translateZ(0);
             transform: translateZ(0);
@@ -87,7 +100,6 @@
             background: white;
             padding-top: 20px;
             color: $primary-color;
-            font-size: 20px;
             font-weight: 400;
             text-transform: uppercase;
             &:hover{
@@ -97,7 +109,7 @@
             &:before{
                 content: "\f110";
                 position: absolute;
-                right: 175px;
+                right: 170px;
                 padding: 0;
                 font-family: FontAwesome;
                 -webkit-transition-duration: 1s;
@@ -125,7 +137,6 @@
             transition-duration: 0.1s;
             background: white;
             color: $primary-color;
-            font-size: 20px;
             font-weight: 400;
             text-transform: uppercase;
             &:hover{
@@ -137,8 +148,8 @@
                 position: absolute;
                 right: 1em;
                 padding: 0;
-                top: 19px;
-                left: 150px;
+                top: 18px;
+                left: 115px;
                 font-family: FontAwesome;
                 -webkit-transform: translateZ(0);
                 transform: translateZ(0);
@@ -154,6 +165,51 @@
                 transform: translateX(4px);
             }
         }
+            &--home{
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            padding-right: 2.2em;
+            -webkit-transition-duration: 0.1s;
+            transition-duration: 0.1s;
+            background: white;
+            color: $primary-color;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding: 66px 0;
+            @include mobile{
+                padding: 25px 0;
+            }
+            &:hover{
+                text-decoration: none;
+                color: $primary-color;
+            }
+            &:before{
+                content: "\f061";
+                position: absolute;
+                left: 185px;
+                padding: 0;
+                top: 65px;
+                font-family: FontAwesome;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                -webkit-transition-duration: 0.1s;
+                transition-duration: 0.1s;
+                -webkit-transition-property: transform;
+                transition-property: transform;
+                -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+                @include mobile{
+                    top: 23px;
+                }
+            }
+            &:hover:before, &:focus:before, &:active:before{
+                -webkit-transform: translateX(4px);
+                transform: translateX(4px);
+            }
+        }
     }
 }
-
