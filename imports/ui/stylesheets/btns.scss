@@ -97,7 +97,7 @@
             &:before{
                 content: "\f110";
                 position: absolute;
-                right: 1em;
+                right: 175px;
                 padding: 0;
                 font-family: FontAwesome;
                 -webkit-transition-duration: 1s;
@@ -112,7 +112,7 @@
                 transform: rotate(360deg);
             }
         }
-        &-news{
+        &--news{
             -webkit-transform: translateZ(0);
             transform: translateZ(0);
             box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -138,6 +138,7 @@
                 right: 1em;
                 padding: 0;
                 top: 19px;
+                left: 150px;
                 font-family: FontAwesome;
                 -webkit-transform: translateZ(0);
                 transform: translateZ(0);
