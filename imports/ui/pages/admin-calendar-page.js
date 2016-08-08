@@ -10,6 +10,8 @@ Template.adminCalendarPage.onRendered(() => {
             'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'
         ],
         monthNamesShort: ['янв', 'февр', 'апр', 'авг', 'сент', 'окт', 'нояб', 'дек'],
+        height: 'auto',
+        contentHeight: 'auto',
         events(start, end, timezone, callback) {
             let data = Events.find().fetch().map((event) => {
                 event.editable = !isPast(event.start);
