@@ -14,7 +14,7 @@
 	position: absolute;
 	width: 35%;
 	height: 100%;
-	padding:80px;
+	padding: 70px 50px;
 	background-color: rgba($primary-color, 0.77);
     display: inline-block;
     vertical-align: middle;
@@ -29,7 +29,7 @@
 		padding: 25px;
 	}
 	&__title {
-		font-size: 24px;
+		font-size: 22px;
 		line-height: 1;
 		color: #fff;
 		margin-top: 5px; 
@@ -39,14 +39,14 @@
 	}
 	&__tel a{
 		text-decoration: none;
-		font-size: 18px;
+		font-size: 16px;
 		color: #fff;
 		@include tablet{
 			font-size: 14px;
 		}
 	}
 	&__adress{
-		font-size: 20px;
+		font-size: 18px;
 		color: #fff;
 		@include tablet{
 			font-size: 16px;
@@ -56,10 +56,14 @@
 .v-align {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
+    left: 50%;	
+    transform: translate(-50%, -50%);
     @include tablet{
+    	text-align: center;
+    	margin: 0 auto;
     	position: relative;
     	top: 0;
+    	left: 0;
     	transform: none;
     }
 }
