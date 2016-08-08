@@ -91,18 +91,18 @@
         }
     }
     .logo{
-        display: block;
         margin: 0 auto;
         &__img{
             display: block;
             width: 100px;
-        }
-        @include tablet {
-            width: 100px;
-            float: none;
+            @include mobile {
+                width: auto;
+                height: 48px;
+            }
         }
         @include mobile {
             float: right;
+            margin: 10px 0;
         }
     }
     &__socials{
@@ -125,20 +125,24 @@
                 display: none;
             }
             &--fb{
-                background-image: url('/icons/h-fb.png')
+                background-image: url('/icons/h-fb.png');
+                &:hover {
+                    background-image: url('/icons/h-fb-hover.png');
+                }
             }
             &--vk{
-                background-image: url('/icons/h-vk.png')
+                background-image: url('/icons/h-vk.png');
+                &:hover {
+                    background-image: url('/icons/h-vk-hover.png');
+                }
             }
             &--insta{
-                background-image: url('/icons/h-insta.png')
+                background-image: url('/icons/h-insta.png');
+                &:hover {
+                    background-image: url('/icons/h-insta-hover.png');
+                }
             }
         }
-    }
-    .buttons-enroll {
-         @include tablet {
-            margin: 0 40px;
-         }
     }
 }
 
