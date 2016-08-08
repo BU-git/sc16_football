@@ -8,7 +8,10 @@ Template.galleryPage.onRendered(function() {
         itemSelector: '.gallery__item',
         layoutMode: 'fitRows'
     });
-    $('.gallery__item').fancybox();
+    $('.gallery__item').fancybox({
+        cyclic: false,
+        showNavArrows: false
+    });
 });
 
 Template.galleryPage.events({
