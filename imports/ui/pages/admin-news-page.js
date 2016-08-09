@@ -28,8 +28,17 @@ Template.adminNewsPage.helpers({
 
 Template.adminNewsPage.events({
     'click .js-btn-remove-news': function(e, template){
-        News.remove(this._id);
-        sAlert.success('Новость удалена')
+        var id = this._id;
+        $(e.target).confirmation({
+            onConfirm: function(e, template){
+                News.remove(id);
+                sAlert.success('Новость удалена')
+            },
+            placement: 'top',
+            title: "Вы уверены, что хотите удалить новость?",
+            btnOkLabel: "Да",
+            btnCancelLabel: "Отмена"
+        });
     },
     'click #js-open-modal': function(e, template) {
         Event.emit('openModal', {'addNews': true});

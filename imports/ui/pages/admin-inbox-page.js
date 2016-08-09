@@ -85,8 +85,12 @@ Template.adminInboxPage.events({
             $(e.target).confirmation({
                 onConfirm: function(e, template){
                     Enrolls.remove(id);
+                    sAlert.success('Заявка удалена');
                 },
-                placement: 'left'
+                placement: 'left',
+                title: "Вы уверены, что хотите удалить заявку?",
+                btnOkLabel: "Да",
+                btnCancelLabel: "Отмена"
             });
         }
     }
