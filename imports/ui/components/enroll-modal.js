@@ -25,7 +25,8 @@ Template.enrollModal.onRendered(function(){
                 required: true
             },
             email: {
-                required: true
+                required: true,
+                email: true
             }
         },
         messages: {
@@ -48,6 +49,7 @@ Template.enrollModal.onRendered(function(){
             },
             email: {
                 required: "Введите Вашу электронную почту",
+                email: "Введите электронный адрес в формате name@sitename.com",
                 pattern: "Введите электронный адрес в формате name@sitename.com"
             }
         }
