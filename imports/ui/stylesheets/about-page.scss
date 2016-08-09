@@ -40,9 +40,12 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+        @include tablet{
+            width: 80%;
+        }
         @include mobile{
+            width: 100%;
             font-size: 13px;
-            margin-top: 0;
         }
     }
 }
