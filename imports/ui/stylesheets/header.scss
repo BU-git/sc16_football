@@ -16,25 +16,15 @@
         }
         &--text{
             margin-bottom: 20px;
-            margin-left: 30px;
             @include mobile {
                 margin-top: 12px;
                 margin-bottom: 10px;
-                margin-left: 10px;
             }
-            @include tablet {
-                margin-bottom: 10px;
-                margin-left: 10px;
-            }
-            &:before {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 0;
-                left: -15px;
-                width: 33px;
-                height: 33px;
-                background-image: url('/icons/h-ball.png');
+            .icon-ball{
+                font-size: 30px;
+                color: $primary-color;
+                vertical-align: middle;
+                margin-right: 6px;
                 @include mobile {
                     display: none;
                 }
@@ -44,49 +34,24 @@
             }
         }
         &--tel{
-            margin-left: 30px;
-            @include mobile {
-                margin-left: 10px;
+            a:hover{
+                color: $second-color;
+                .icon-phone{
+                    text-decoration: none;
+                    color: $second-color;
+                }
             }
-            @include tablet {
-                margin-left: 10px;
-            }
-            &:before {
-                content: '';
-                display: block;
-                position: absolute;
-                top: 49px;
-                left: -7px;
-                width: 21px;
-                height: 36px;
-                background-image: url('/icons/h-tel.png');
+            .icon-phone{
+                font-size: 26px;
+                color: $primary-color;
+                vertical-align: middle;
+                margin-right: 8px;
                 @include mobile {
                     display: none;
                 }
                 @include tablet {
                     display: none;
-                }
-            }
-            &:hover{
-                a {
-                    color: $second-color;
-                }
-                &:before {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    top: 49px;
-                    left: -7px;
-                    width: 21px;
-                    height: 36px;
-                    background-image: url('/icons/h-tel-hover.png');
-                    @include mobile {
-                        display: none;
-                    }
-                    @include tablet {
-                        display: none;
-                    }
-                }
+                }  
             }
         }
     }
@@ -107,15 +72,13 @@
         }
     }
     &__socials{
-        margin-top: 20px;
+        padding-top: 20px;
+        *{
+            vertical-align: middle;
+        }
         &-icon{
             display: inline-block;
-            float: left;
-            width: 38px;
-            height: 38px;
             margin-right: 10px;
-            background: transparent no-repeat 50% 50%;
-            background-size: contain;
             &:last-child {
                 margin-right: 25px; 
             }
@@ -125,23 +88,41 @@
             @include tablet{
                 display: none;
             }
-            &--fb{
-                background-image: url('/icons/h-fb.png');
-                &:hover {
-                    background-image: url('/icons/h-fb-hover.png');
-                }
+        }
+        .icon-fb {
+            color: #fff;
+            padding: 10px;
+            font-size: 20px;
+            line-height: 1;
+            background-color: $primary-color;
+            border-radius: 5px;
+            &:hover {
+                background-color: $second-color;
+                text-decoration: none; 
             }
-            &--vk{
-                background-image: url('/icons/h-vk.png');
-                &:hover {
-                    background-image: url('/icons/h-vk-hover.png');
-                }
+        }
+        .icon-vk {
+            color: #fff;
+            padding: 10px;
+            font-size: 20px;
+            line-height: 1;
+            background-color: $primary-color;
+            border-radius: 5px;
+            &:hover {
+                background-color: $second-color;
+                text-decoration: none; 
             }
-            &--insta{
-                background-image: url('/icons/h-insta.png');
-                &:hover {
-                    background-image: url('/icons/h-insta-hover.png');
-                }
+        }
+        .icon-insta {
+            color: #fff;
+            padding: 10px;
+            font-size: 20px;
+            line-height: 1;
+            background-color: $primary-color;
+            border-radius: 5px;
+            &:hover {
+                background-color: $second-color;
+                text-decoration: none; 
             }
         }
     }
