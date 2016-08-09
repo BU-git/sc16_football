@@ -2,7 +2,6 @@
     padding-top: 15px;
     padding-bottom: 15px; 
     @include mobile{
-        // padding: 15px 0 15px 0;
         border-bottom: 1px solid #acacac;
         &:last-child{
             border: 0;
@@ -78,7 +77,6 @@
         }
     }
 }
-
 .advantages {
     color: #005bae;
     font-weight: bold;
@@ -123,22 +121,6 @@
         margin: 0 0 0 auto;
         @include tablet{
             margin: 0 auto;
-        }
-    }
-    &__list{
-        p{
-            font-size: 19px;
-            color: #000;
-            &:before{
-                content: '';
-                display: inline-block;
-                width: 5px;
-                height: 5px;
-                margin-right: 10px;
-                vertical-align: middle;
-                background: $primary-color;
-                border-radius: 50%;
-            }
         }
     }
 }

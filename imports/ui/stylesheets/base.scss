@@ -68,7 +68,18 @@ body{
         }
     }
 }
-
+.list{
+    color: $primary-color;
+    padding: 20px;
+    font-size: 19px;
+    margin-left: 15px;
+    @include mobile{
+        font-size: 15px;
+    }
+    span{
+        color: #000;
+    }
+}
 .contact-info{
     &__tel{
         color: #fff;

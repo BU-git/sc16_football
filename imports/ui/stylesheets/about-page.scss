@@ -4,4 +4,45 @@
     background: #fff no-repeat 50% 50%;
     background-size: cover;
     background-attachment: fixed;
+    margin: 20px 0 0 0;
+    position: relative;
+    @include mobile{
+        height: 200px;
+    }
+    &::before {
+        content: "";
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+    }
+    &__text{
+        width: 50%;
+        display: block;
+        color: #FFF;
+        height: 100%;
+        font-size: 19px;
+        position: relative;
+        text-align: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        @include mobile{
+            font-size: 13px;
+            margin-top: 0;
+        }
+    }
 }
