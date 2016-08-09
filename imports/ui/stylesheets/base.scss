@@ -56,7 +56,6 @@ body{
         background-size: contain;
         @include mobile{
             text-align: center;
-            margin-top: 15px;
         }
         &--fb{
             background-image: url('/icons/fb.svg')
