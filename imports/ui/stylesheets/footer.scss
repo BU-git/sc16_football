@@ -52,11 +52,17 @@
      &:before {
         content: '';
         display: block;
-        height: 60px;
+        height: 50px;
         width: 100%;
         position: absolute;
-        top: -60px;
+        top: -50px;
         left: 0;
         background: url("../ornament.png") repeat-x;
+        @include tablet{
+            zoom: 0.6;
+        }
+        @include mobile{
+            zoom: 0.4;
+        }
      }
 }
