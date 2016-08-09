@@ -77,20 +77,6 @@
         }
     }
 }
-.advantages {
-    color: #005bae;
-    font-weight: bold;
-    &__title {
-        padding: 120px 90px 55px;
-        font-size: 28px;
-        line-height: 34px;
-    }
-    .glyphicon{
-        &-star{
-            color: $primary-color;
-        }
-    }
-}
 .advantages{
     color: $primary-color;
     &__item {
@@ -102,10 +88,8 @@
         }
     }
     &__icon {
-        width: 111px;
-        height: 112px;
-        margin: 0 auto 30px;
-        background: #fff no-repeat 50% 50%;
+        font-size: 115px;
+        text-align: center;
         @include mobile{
             margin-bottom: 15px;
         }

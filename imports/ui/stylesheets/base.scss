@@ -46,28 +46,6 @@ body{
         }
     }
 }
-
-.socials{
-    &__icon{
-        display: inline-block;
-        width: 35px;
-        height: 23px;
-        background: transparent no-repeat 50% 50%;
-        background-size: contain;
-        @include mobile{
-            text-align: center;
-        }
-        &--fb{
-            background-image: url('/icons/fb.svg')
-        }
-        &--vk{
-            background-image: url('/icons/vk.svg')
-        }
-        &--insta{
-            background-image: url('/icons/insta.svg')
-        }
-    }
-}
 .list{
     color: $primary-color;
     padding: 20px;
