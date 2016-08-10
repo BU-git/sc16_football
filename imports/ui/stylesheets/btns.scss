@@ -128,6 +128,47 @@
                 transform: rotate(360deg);
             }
         }
+        &--calendar{
+            -webkit-transform: translateZ(0);
+            transform: translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -moz-osx-font-smoothing: grayscale;
+            padding-right: 2.2em;
+            padding-top: 20px;
+            -webkit-transition-duration: 0.1s;
+            transition-duration: 0.1s;
+            background: #fafafa;
+            color: $primary-color;
+            font-weight: 400;
+            text-transform: uppercase;
+            &:hover{
+                text-decoration: none;
+                color: $primary-color;
+            }
+            &:before{
+                content: "\f073";
+                position: absolute;
+                right: 1em;
+                padding: 0;
+                top: 18px;
+                left: 120px;
+                font-family: FontAwesome;
+                -webkit-transform: translateZ(0);
+                transform: translateZ(0);
+                -webkit-transition-duration: 0.1s;
+                transition-duration: 0.1s;
+                -webkit-transition-property: transform;
+                transition-property: transform;
+                -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+            }
+            &:hover:before, &:focus:before, &:active:before{
+                -webkit-transform: translateX(4px);
+                transform: translateX(4px);
+            }
+        }
         &--news{
             -webkit-transform: translateZ(0);
             transform: translateZ(0);
