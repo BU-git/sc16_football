@@ -37,17 +37,20 @@
             text-align: center;
             &:hover{
                 a{
-                    color: $primary-color;
+                    color: $second-color;
                 }
             }
             a{
                 color: #fff;
+                &:hover,
+                &:focus{
+                    background-color: transparent;
+                }
             }
             &.active{
-                color: $primary-color;
-                background-color: #eee;
+                color: $second-color;
                 a{
-                    color: $primary-color;
+                    color: $second-color;
                 }
             }
         }
@@ -57,15 +60,11 @@
     background: #fff;
 }
 
-.sidebar-admin{
-    li{
-        a{
-            border-radius: 0;
-        }
-        &.active{
-            a{
-                background: $primary-color;
-            }
-        }
+.menu{
+    @include mobile{
+        width: 100%;
+        text-align: center;
+        float: none;
+        margin: 0;
     }
 }
