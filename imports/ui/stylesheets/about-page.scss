@@ -7,7 +7,8 @@
     margin: 20px 0 0 0;
     position: relative;
     @include mobile{
-        height: 200px;
+        min-height: 300px;
+        font-size: $fs-general-xs;
     }
     &::before {
         content: "";
@@ -45,7 +46,7 @@
         }
         @include mobile{
             width: 100%;
-            font-size: 13px;
+            font-size: $fs-general-xs;
         }
     }
 }

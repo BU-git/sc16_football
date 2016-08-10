@@ -1,12 +1,7 @@
 .testimonials{
     padding-top: 15px;
     padding-bottom: 15px; 
-    @include mobile{
-        border-bottom: 1px solid #acacac;
-        &:last-child{
-            border: 0;
-        }
-    }
+    @include mobile{}
     &__name{
         font-size: 19px;
         color: $primary-color;
@@ -52,6 +47,15 @@
         text-align: justify;
         background: $daknest;
         position: relative;
+        @include tablet{
+            text-align: center;
+        }
+        @include mobile{
+            font-size: $fs-general-xs;
+            margin-top: 0;
+            text-align: left;
+            padding: 19px 30px;
+        }
         &:before{
             content: '"';
             position: absolute;
@@ -71,9 +75,6 @@
             border-right-width: 5px;
             border-left-width: 29px;
             border-bottom: 27px solid $daknest;
-        }
-        @include tablet{
-            text-align: center;
         }
     }
 }
@@ -97,6 +98,9 @@
 }
 .partnership{
     padding: 0 0 50px 0;
+    @include mobile{
+        padding-bottom: 20px;
+    }
     &__logo {
         height: 240px;
         width: 130px;

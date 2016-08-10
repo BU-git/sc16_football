@@ -34,11 +34,12 @@
         &.is-checked{
             border-bottom: 2px solid $second-color;
         }
-    }
-    @include tablet{
-        font-size: 17px;
-    }
-    @include mobile{
-        font-size: 15px;
+        @include mobile{
+            display: block;
+            font-size: $fs-general-xs;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            width: 50%;
+        }
     }
 }

@@ -43,11 +43,11 @@
 }
 .slider{
     &__ufs{
-    font-size: 45px;
-    @include mobile{
-        font-size: 35px;
-        text-align: center;
-    }
+        font-size: 45px;
+        @include mobile{
+            font-size: $fs-titles-xs;
+            text-align: center;
+        }
     }
     &__arrow{
         @include mobile{
@@ -65,7 +65,7 @@
     .slider__title{
         font-size: 33px;
         @include mobile{
-            font-size: 24px;
+            font-size: $fs-titles-xs;
         }
     }
     .swiper-content{
@@ -85,6 +85,14 @@
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
+        @include mobile{
+            font-size: $fs-subtitles-xs;
+        }
+    }
+    .text-center{
+        @include mobile{
+            text-align: left;
+        }
     }
 }
 
@@ -106,8 +114,8 @@
             font-size: 17px;
         }
         @include mobile{
-            padding: 50px;
-            font-size: 15px;
+            padding: 0 15px;
+            font-size: $fs-subtitles-xs;
         }
     }
     .slider__title{
@@ -122,7 +130,4 @@
             font-size: 21px;
         }
     }
-}
-.slide-2{
-    padding-left: 40px;
 }

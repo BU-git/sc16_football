@@ -10,8 +10,8 @@ body{
     padding-top: 45px;
     padding-bottom: 45px;
     @include mobile{
-        padding-top: 25px;
-        padding-bottom: 25px;
+        padding-top: 15px;
+        padding-bottom: 20px;
     }
     &--dark{
         background-color: $dark;
@@ -33,6 +33,7 @@ body{
         }
         @include mobile{
             margin: 20px 0;
+            font-size: $fs-titles-xs;
         }
     }
     &__sub-title{
@@ -43,6 +44,13 @@ body{
         margin: 30px 0;
         @include mobile{
             margin: 20px 0;
+            font-size: $fs-subtitles-xs;
+            text-align: left;
+        }
+        br{
+            @include mobile{
+                display: none;
+            }
         }
     }
 }
@@ -52,7 +60,12 @@ body{
     font-size: 19px;
     margin-left: 15px;
     @include mobile{
-        font-size: 15px;
+        font-size: $fs-general-xs;
+    }
+    li{
+        @include mobile{
+            margin-bottom: 10px;
+        }
     }
     span{
         color: #000;
