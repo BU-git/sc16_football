@@ -39,6 +39,7 @@
         @include clearfix;
         margin-bottom: 30px;
         border-bottom: 3px solid $second-color;
+        @include transition(border 500ms ease-in);
         background: $dark;
         flex: 0 0 24%;
         margin: 1% 0;
@@ -55,6 +56,15 @@
                 margin-right: 0;
             }
         }
+        &:hover{
+            border-bottom: 3px solid $primary-color;
+            @include transition(border 500ms ease-out);
+            .team-card__additional{
+                visibility: visible;
+                opacity: 1;
+                @include transition(opacity 1s linear);
+            }
+        }
         @include tablet{
             flex: 0 0 49%;
         }
@@ -69,6 +79,7 @@
             margin: 0 auto;
             background: #fff no-repeat 50% 50%;
             background-size: cover;
+            position: relative;
         }
         &__info{
             text-align: center;
@@ -78,6 +89,30 @@
         &__name{
             font-size: 17px;
             font-weight: 500;
+        }
+        &__additional{
+            visibility: hidden;
+            opacity: 0;
+            @include transition(visibility 0s 2s, opacity 2s linear);
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.72);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h5{
+                font-size: 17px;
+            }
+        }
+        &__advantages{
+            span{
+                padding-right: 10px;
+                color: $primary-color;
+            }
         }
     }
 }
