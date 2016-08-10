@@ -10,6 +10,14 @@
         @include tablet{
             text-align: center;
         }
+        &-child{
+            @include tablet{
+                text-align: center;
+            }
+            @include mobile{
+                text-align: center;
+            }
+        }
     }
     &__date{
         font-size: 12px;
@@ -44,7 +52,7 @@
         padding: 30px;
         margin-top: 30px;
         font-size: 15px;
-        text-align: justify;
+        text-align: left;
         background: $daknest;
         position: relative;
         @include tablet{
