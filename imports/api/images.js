@@ -1,6 +1,6 @@
 import { FilesCollection } from 'meteor/ostrio:files';
-import Grid from 'gridfs-stream'; // We'll use this package to work with GridFS
-import fs from 'fs';              // Required to read files initially uploaded via Meteor-Files
+import Grid from 'gridfs-stream';
+import fs from 'fs';
 import { MongoInternals } from 'meteor/mongo';
 
 // Set up gfs instance
