@@ -10,9 +10,6 @@
             color: #fff;
         }
     }
-    .fc-today{
-        background-color: transparent;
-    }
     // card
     .fc-event{
         background-color: $primary-color;
@@ -79,6 +76,9 @@
     // table borders
     &.fc th, &.fc td{
         border: 0;
+    }
+    .fc-today{
+        background-color: transparent;
     }
 }
 
