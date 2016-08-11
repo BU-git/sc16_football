@@ -56,10 +56,10 @@
     &:before {
         content: '';
         display: block;
-        height: 50px;
+        height: 54px;
         width: 100%;
         position: absolute;
-        top: -50px;
+        top: -53px;
         left: 0;
         background: url("../ornament.png") repeat-x;
         @include tablet{
