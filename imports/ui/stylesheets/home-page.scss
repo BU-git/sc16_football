@@ -56,11 +56,11 @@
         background: $daknest;
         position: relative;
         @include tablet{
-            text-align: center;
+            text-align: left;
+            margin-top: 0;
         }
         @include mobile{
             font-size: $fs-general-xs;
-            margin-top: 0;
             text-align: left;
             padding: 19px 30px;
         }
@@ -93,6 +93,9 @@
         font-weight: bold;
         line-height: 1.3;
         margin-top: 30px;
+        @include tablet{
+            padding-bottom: 20px;
+        }
         @include mobile{
             margin: 20px 0;
         }

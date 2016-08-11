@@ -59,6 +59,7 @@
         color: $primary-color;
         font-size: 19px;
         h2{
+            font-size: 17px;
             @include mobile{
                 font-size: 15px;
             }
@@ -102,9 +103,16 @@
     }
     &__time{
         float: left;
+        @include tablet{
+            float: none;
+        }
     }
     &__place{
         float: right;
+        @include tablet{
+            float: none;
+            margin-top: 10px;
+        }
     }
     &__title{
         font-size: 14px;

@@ -10,6 +10,10 @@ body{
     padding-top: 45px;
     padding-bottom: 45px;
     @include mobile{
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+    @include mobile{
         padding-top: 15px;
         padding-bottom: 20px;
     }

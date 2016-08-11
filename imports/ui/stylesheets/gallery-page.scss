@@ -4,15 +4,14 @@
         display: block;
         // position: relative;
         float: left;
-        width: 24%;
+        width: 25%;
         height: 275px;
-        padding: 20px;
         background: #cccccc no-repeat 50% 50%;
         background-size: cover;
         @include tablet{
             width: 33.33333333%;
             margin: 0;
-            height: 320px;
+            height: 270px;
         }
         @include mobile{
             width: 100%;
