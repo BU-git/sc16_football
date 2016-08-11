@@ -3,15 +3,17 @@ import './news-card-admin.html';
 import { Template } from 'meteor/templating';
 import { News } from '../../api/news.js';
 
+var currentNews = new ReactiveVar("");
+
 Template.newsCardAdmin.onCreated(function(){});
 
 Template.newsCardAdmin.onRendered(function(){
-    var newsId = this.data._id;
     $('.js-btn-remove-news').confirmation({
         onConfirm: function(e, template){
             e.preventDefault();
-            News.remove(newsId);
-            sAlert.success('Новость удалена')
+            Meteor.call('removeNews', currentNews.get(), function(argument) {
+                sAlert.success('Новость удалена')
+            })
         },
         placement: 'top',
         title: "Вы уверены, что хотите удалить новость?",
@@ -26,6 +28,9 @@ Template.newsCardAdmin.events({
         data.addNews = false;
         Event.emit('openModal', data);
     },
+    'click .js-btn-remove-news': function(){
+        currentNews.set(this._id);
+    }
     // 'click .js-btn-remove-news': function(e, template){
     //     Session.set('newsId', this._id)
     // }
