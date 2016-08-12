@@ -21,7 +21,7 @@ Template.newsPage.onCreated(function(){
     });
     // cursor
     instance.news = function() { 
-        return News.find({}, {limit: instance.loaded.get()});
+        return News.find({}, {sort: {dateStamp: -1}, limit: instance.loaded.get()});
     }
 });
 
