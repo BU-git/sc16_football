@@ -9,6 +9,7 @@ import '../../ui/components/header-admin.js';
 import '../../ui/components/sidebar-admin.js';
 import '../../ui/components/footer.js';
 import '../../ui/components/enroll-modal.js';
+import '../../ui/components/team-modal.js';
 
 import '../../ui/pages/login-page.js';
 import '../../ui/pages/admin-page.js';

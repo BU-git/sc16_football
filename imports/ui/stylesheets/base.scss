@@ -80,3 +80,25 @@ body{
         color: #fff;
     }
 }
+
+.creator{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: $dark;
+    &__img{
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+        background: #fff no-repeat 50% 50%;
+        background-size: cover;
+        border-bottom: 3px solid $second-color;
+    }
+    &__name{
+        font-weight: bold;
+    }
+    &__info{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
